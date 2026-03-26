@@ -21,7 +21,7 @@
 - GitHub에 별도 저장소로 존재하는 프로젝트입니다.
 - Render에 `Web Service`로 배포되어 운영되는 API 서버입니다.
 
-### `.env`
+### Environment (`.env`)
 
 - `DATABASE_URL`
   - 역할: PostgreSQL 연결 문자열입니다.
@@ -40,7 +40,7 @@
 - GitHub에 별도 저장소로 존재하는 프로젝트입니다.
 - Render에 `Web Service`로 배포되어 운영되는 API 서버입니다.
 
-### `.env`
+### Environment (`.env`)
 
 - `SENDER_EMAIL_USER`
   - 역할: 이메일 발송에 사용할 발신자 이메일 주소입니다.
@@ -75,7 +75,7 @@
 - GitHub에 별도 저장소로 존재하는 프로젝트입니다.
 - Render에 `Web Service`로 배포되어 운영되는 API 서버입니다.
 
-### `.env`
+### Environment (`.env`)
 
 - `TOSS_SECRET_KEY`
   - 역할: Toss Payments 실결제(=라이브 결제)용 secret key입니다.
