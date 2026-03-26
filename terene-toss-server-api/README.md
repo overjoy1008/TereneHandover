@@ -47,7 +47,12 @@ terene-toss-server-api/
 └─ package.json
 ```
 
-## Historical / No Longer Used Code
+## Directory / File Notes
 
-- 코드 기준으로 명확한 `legacy`, `_날짜`, `_1` 형식 파일은 현재 이 디렉토리에는 없습니다.
-- 다만 `node_modules/`는 직접 작성한 애플리케이션 코드가 아니라 설치된 의존성 폴더입니다.
+- `index.js`
+  - 이 디렉토리의 실제 실행 진입점입니다.
+  - Express 서버를 띄우고, CORS와 JSON body 파싱을 설정합니다.
+  - `.env`에서 `TOSS_SECRET_KEY`, `TOSS_SECRET_TEST_KEY`, `PORT`를 읽습니다.
+  - `/confirm` POST 엔드포인트를 통해 Toss Payments 결제 확인 API를 호출합니다.
+  - `paymentKey`가 테스트 결제인지 확인해서 live key 또는 test key를 구분해 사용합니다.
+  - 최종적으로 Toss Payments의 confirm 결과를 그대로 받아 프론트엔드에 응답합니다.

@@ -49,13 +49,91 @@ terene-db-server/
 └─ server.js
 ```
 
+## Directory / File Notes
+
+- `server.js`
+  - 서버 실행 진입점입니다.
+  - Express 앱을 띄우고 `PORT` 또는 기본 포트 `3001`로 서버를 실행합니다.
+- `instances/`
+  - DB에 존재하는 테이블의 스키마와 예시 인스턴스를 포함합니다.
+- `src/app.js`
+  - 공통 Express 설정과 라우터 연결을 담당합니다.
+- `src/models/db.js`
+  - PostgreSQL 연결 설정을 담당합니다.
+  - `.env`의 `DATABASE_URL`을 읽어 DB connection pool을 생성합니다.
+- `src/controllers/`
+  - 각 API 요청/응답 처리 계층입니다.
+- `src/services/`
+  - 실제 SQL 실행과 비즈니스 로직을 담당하는 계층입니다.
+- `src/routes/`
+  - 각 엔드포인트 경로를 정의하는 라우터 계층입니다.
+
+## Reservation Domain
+
+- 예약
+  - 테이블/스키마 기준: `instances/orders_250618/`
+  - API 기준: `/api/v2/orders`
+- 예약 결제
+  - 테이블/스키마 기준: `instances/order_payments_250618/`
+  - API 기준: `/api/v2/payments`
+- 예약 취소
+  - 테이블/스키마 기준: `instances/order_cancellations_250618/`
+  - API 기준: `/api/v2/cancellations`
+- 예약 환불
+  - 테이블/스키마 기준: `instances/order_refunds_250618/`
+  - API 기준: `/api/v2/refunds`
+- 예약 정산
+  - 테이블/스키마 기준: `instances/order_settlements_250618/`
+  - API 기준: `/api/v2/settlements`
+- 쿠폰 유형 정의
+  - 테이블/스키마 기준: `instances/coupon_definitions_250618/`
+  - API 기준: `/api/v2/coupon-definitions`
+- 쿠폰 인스턴스
+  - 테이블/스키마 기준: `instances/coupon_instances_250618/`
+  - API 기준: `/api/v2/coupon-instances`
+- 마일리지
+  - 테이블/스키마 기준: `instances/mileages_250618/`
+  - API 기준: `/api/v2/mileages`
+- 회원
+  - 테이블/스키마 기준: `instances/customers_250618/`
+  - API 기준: `/api/v2/customers`
+
+## Admin Settings Domain
+
+- 관리자 설정 관련 스키마는 주로 `instances/patch_250928/` 기준으로 정리되어 있습니다.
+- 캘린더
+  - 테이블/스키마 기준: `days_250928`
+  - API 기준: `/api/v3/days`
+- 날짜 분류 카테고리
+  - 테이블/스키마 기준: `days_category`
+  - API 기준: `/api/v3/days-category`
+- 장소 정보
+  - 테이블/스키마 기준: `locations`
+  - API 기준: `/api/v3/locations`
+- N일 전까지 환불 금액 규칙
+  - 테이블/스키마 기준: `refund_policy`
+  - API 기준: `/api/v3/refund-policy`
+- 패키지 및 추가서비스
+  - 테이블/스키마 기준: `additional_services`
+  - API 기준: `/api/v3/additional-services`
+- 멤버쉽 별(TERENE 6/9/12/24) 예약 규정
+  - 테이블/스키마 기준: `memberships`
+  - API 기준: `/api/v3/memberships`
+- 그외 관리자용 설정들
+  - 테이블/스키마 기준: `settings`
+  - API 기준: `/api/v3/settings`
+
 ## Historical / No Longer Used Code
 
-- `instances/` 아래의 날짜형 디렉토리들은 마이그레이션 기록 또는 시점별 SQL 스냅샷 성격의 파일입니다.
-- 예:
-  - `instances/customers_250618/`
-  - `instances/coupon_instances_250618/`
-  - `instances/order_settlements_250618/`
-  - `instances/patch_250928/`
+- `instances/coupons/`
+  - `coupon_definitions_250618` 및 `coupon_instances_250618` 이전 형태의 쿠폰 관련 스키마 흔적입니다.
+- `instances/customers/`
+  - `customers_250618` 이전 형태의 고객 관련 스키마 흔적입니다.
+- `instances/days/`
+  - `v3`의 `days_250928` 체계 이전의 날짜 관련 스키마 흔적입니다.
+- `instances/holidays/`
+  - 공휴일 데이터 관련 별도 스키마입니다.
+- `instances/orders/`
+  - `orders_250618` 이전 형태의 주문 관련 스키마 흔적입니다.
 - `src/routes/test.routes.js`, `src/controllers/test.controller.js`, `src/services/test.service.js`
   - 이름 기준으로 테스트/검증 목적 파일로 보이며, 운영 핵심 경로와는 구분해서 보는 편이 좋습니다.
