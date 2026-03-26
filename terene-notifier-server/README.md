@@ -18,18 +18,35 @@
   - 역할: 위 이메일 계정으로 SMTP 발송할 때 사용하는 비밀번호 또는 앱 비밀번호입니다.
   - 형식: `xxxx xxxx xxxx xxxx` 등 소문자 16자리 문자열
   - Gmail을 쓴다면 일반 계정 비밀번호가 아니라 Google App Password를 사용합니다.
+  - 사용 중인 메일 서비스가 다르면 해당 서비스의 SMTP 비밀번호 또는 앱 비밀번호를 사용합니다.
 - `SENDER_PHONE`
   - 역할: SOLAPI 문자/알림톡 발신 번호입니다.
   - 형식: `02-XXXX-XXXX`
   - SOLAPI 콘솔에 등록 및 인증된 발신번호를 사용합니다.
 - `SOLAPI_API_KEY`
   - 역할: SOLAPI API 호출용 키입니다.
-  - 형식: 대문자 및 숫자로 이루어진 문자열
+  - 형식: 대문자 및 숫자로 이루어진 16자리 문자열
   - SOLAPI 콘솔의 API Key 관리 화면에서 발급받습니다.
 - `SOLAPI_API_SECRET`
   - 역할: SOLAPI API 호출용 시크릿입니다.
-  - 형식: 대문자 및 숫자로 이루어진 문자열
+  - 형식: 대문자 및 숫자로 이루어진 16자리 문자열
   - SOLAPI 콘솔의 API Key 관리 화면에서 발급받습니다.
+
+## Docker
+
+- Build Command: `npm install`
+- Start Command: `npm start`
+- 기본 포트: `3000`
+
+## Local Testing
+
+```bash
+docker build -t terene-notifier-server .
+docker run --rm -p 3000:3000 --env-file .env terene-notifier-server
+```
+
+- 로컬에서 Docker로 테스트할 때는 `.env` 파일에 메일 발송, SOLAPI 발송, DB 연동에 필요한 값을 넣어야 합니다.
+- Render에서는 `PORT`가 자동으로 들어오지만, 로컬 Docker 테스트에서는 컨테이너 기본 포트를 `3000`으로 사용하면 됩니다.
 
 ## Directory Structure
 
@@ -43,6 +60,8 @@ terene-notifier-server/
 ├─ .env.example
 ├─ .gitattributes
 ├─ .gitignore
+├─ .dockerignore
+├─ Dockerfile
 ├─ index.js
 ├─ package-lock.json
 └─ package.json

@@ -13,6 +13,22 @@ PostgreSQL 데이터베이스와 직접 통신하는 API 서버이며, GitHub와
   - 형식: `postgresql://`로 시작하는 링크
   - Render에서 배포한 PostgreSQL(`TERENE`)의 `External Database URL`을 사용합니다.
 
+## Docker
+
+- Build Command: `npm install`
+- Start Command: `npm run start`
+- 기본 포트: `3001`
+
+## Local Testing
+
+```bash
+docker build -t terene-db-server .
+docker run --rm -p 3001:3001 --env-file .env terene-db-server
+```
+
+- 로컬에서 Docker로 테스트할 때는 `.env` 파일에 `DATABASE_URL`을 넣어야 합니다.
+- Render에서는 `PORT`가 자동으로 들어오지만, 로컬 Docker 테스트에서는 컨테이너 기본 포트를 `3001`로 사용하면 됩니다.
+
 ## Directory Structure
 
 ```text
@@ -26,6 +42,8 @@ terene-db-server/
 ├─ .env.example
 ├─ .gitattributes
 ├─ .gitignore
+├─ .dockerignore
+├─ Dockerfile
 ├─ package-lock.json
 ├─ package.json
 └─ server.js

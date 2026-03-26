@@ -16,6 +16,21 @@ Toss Payments 결제 확인을 위해 별도로 운영하는 API 서버이며, G
   - 형식: `test_gsk_`로 시작하는 문자열
   - Toss Payments 개발자 콘솔에서 test secret key를 발급받아 사용합니다.
 
+## Docker
+
+- Build Command: `npm install`
+- Start Command: `npm start`
+- 기본 포트: `4000`
+
+## Local Testing
+
+```bash
+docker build -t terene-toss-server-api .
+docker run --rm -p 4000:4000 --env-file .env terene-toss-server-api
+```
+
+- 로컬에서 Docker로 테스트할 때는 `.env` 파일에 `TOSS_SECRET_KEY`, `TOSS_SECRET_TEST_KEY`를 넣어야 합니다.
+- Render에서는 `PORT`가 자동으로 들어오지만, 로컬 Docker 테스트에서는 컨테이너 기본 포트를 `4000`으로 사용하면 됩니다.
 
 ## Directory Structure
 
@@ -25,7 +40,14 @@ terene-toss-server-api/
 ├─ .env.example
 ├─ .gitattributes
 ├─ .gitignore
+├─ .dockerignore
+├─ Dockerfile
 ├─ index.js
 ├─ package-lock.json
 └─ package.json
 ```
+
+## Historical / No Longer Used Code
+
+- 코드 기준으로 명확한 `legacy`, `_날짜`, `_1` 형식 파일은 현재 이 디렉토리에는 없습니다.
+- 다만 `node_modules/`는 직접 작성한 애플리케이션 코드가 아니라 설치된 의존성 폴더입니다.
