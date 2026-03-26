@@ -1,0 +1,15 @@
+DROP TABLE IF EXISTS order_settlements_250618;
+
+DROP TABLE IF EXISTS order_refunds_250618;
+
+DROP TABLE IF EXISTS order_cancellations_250618;
+
+DROP TABLE IF EXISTS order_payments_250618;
+
+DROP TABLE IF EXISTS mileages_250618;
+
+DROP TABLE IF EXISTS coupon_instances_250618;
+
+DROP TABLE IF EXISTS coupon_definitions_250618;
+
+DROP TABLE IF EXISTS orders_250618;

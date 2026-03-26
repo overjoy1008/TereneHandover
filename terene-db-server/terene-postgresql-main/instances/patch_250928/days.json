@@ -1,0 +1,5150 @@
+[
+  {
+    "date": "2025-05-01",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-05-02",
+    "category": "Weekend",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-05-03",
+    "category": "Weekend",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-05-04",
+    "category": "Weekend",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-05-05",
+    "category": "Weekend",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-05-06",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-05-07",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-05-08",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-05-09",
+    "category": "Weekend",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-05-10",
+    "category": "Weekend",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-05-11",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-05-12",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-05-13",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-05-14",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-05-15",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-05-16",
+    "category": "Weekend",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-05-17",
+    "category": "Weekend",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-05-18",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-05-19",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-05-20",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-05-21",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-05-22",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-05-23",
+    "category": "Weekend",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-05-24",
+    "category": "Weekend",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-05-25",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-05-26",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-05-27",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-05-28",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250526-69522261"
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-05-29",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250526-69522261"
+    }
+  },
+  {
+    "date": "2025-05-30",
+    "category": "Weekend",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-05-31",
+    "category": "Weekend",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250526-43633728"
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-06-01",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250526-43633728"
+    }
+  },
+  {
+    "date": "2025-06-02",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-06-03",
+    "category": "Weekend",
+    "is_holiday": true,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-06-04",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-06-05",
+    "category": "Weekend",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-06-06",
+    "category": "Weekend",
+    "is_holiday": true,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250602-78086923"
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-06-07",
+    "category": "Weekend",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250602-78086923"
+    }
+  },
+  {
+    "date": "2025-06-08",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-06-09",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-06-10",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-06-11",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-06-12",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-06-13",
+    "category": "Weekend",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250526-08705617"
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-06-14",
+    "category": "Weekend",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250602-63711461"
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250526-08705617"
+    }
+  },
+  {
+    "date": "2025-06-15",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250602-63711461"
+    }
+  },
+  {
+    "date": "2025-06-16",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250524-60866453"
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-06-17",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250609-49295282"
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250524-60866453"
+    }
+  },
+  {
+    "date": "2025-06-18",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250609-49295282"
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250609-49295282"
+    }
+  },
+  {
+    "date": "2025-06-19",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250617-16098502"
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250609-49295282"
+    }
+  },
+  {
+    "date": "2025-06-20",
+    "category": "Weekend",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250617-16098502"
+    }
+  },
+  {
+    "date": "2025-06-21",
+    "category": "Weekend",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250527-58194137"
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-06-22",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250527-58194137"
+    }
+  },
+  {
+    "date": "2025-06-23",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-06-24",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-06-25",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-06-26",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-06-27",
+    "category": "Weekend",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250602-63718396"
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-06-28",
+    "category": "Weekend",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250602-63718396"
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250602-63718396"
+    }
+  },
+  {
+    "date": "2025-06-29",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250602-63718396"
+    }
+  },
+  {
+    "date": "2025-06-30",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250618-99675362"
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-07-01",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250618-99675362"
+    }
+  },
+  {
+    "date": "2025-07-02",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-07-03",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-07-04",
+    "category": "Weekend",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250616-11527906"
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-07-05",
+    "category": "Weekend",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250602-96477640"
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250616-11527906"
+    }
+  },
+  {
+    "date": "2025-07-06",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250602-56225981"
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250602-96477640"
+    }
+  },
+  {
+    "date": "2025-07-07",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250602-56225981"
+    }
+  },
+  {
+    "date": "2025-07-08",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-07-09",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-07-10",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-07-11",
+    "category": "Weekend",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-07-12",
+    "category": "Weekend",
+    "is_holiday": true,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250524-36904015"
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-07-13",
+    "category": "Weekday",
+    "is_holiday": true,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250523-51102410"
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250524-36904015"
+    }
+  },
+  {
+    "date": "2025-07-14",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250627-07539712"
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250523-51102410"
+    }
+  },
+  {
+    "date": "2025-07-15",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250618-03461675"
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250627-07539712"
+    }
+  },
+  {
+    "date": "2025-07-16",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250617-42614217"
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250618-03461675"
+    }
+  },
+  {
+    "date": "2025-07-17",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250710-35918793"
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250617-42614217"
+    }
+  },
+  {
+    "date": "2025-07-18",
+    "category": "Weekend",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250617-71164839"
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250710-35918793"
+    }
+  },
+  {
+    "date": "2025-07-19",
+    "category": "Weekend",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250701-83579579"
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250617-71164839"
+    }
+  },
+  {
+    "date": "2025-07-20",
+    "category": "Peak-Weekday",
+    "is_holiday": true,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250523-06115541"
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250701-83579579"
+    }
+  },
+  {
+    "date": "2025-07-21",
+    "category": "Peak-Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250523-06115541"
+    }
+  },
+  {
+    "date": "2025-07-22",
+    "category": "Peak-Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-07-23",
+    "category": "Peak-Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-07-24",
+    "category": "Peak-Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250618-26189883"
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-07-25",
+    "category": "Peak-Weekend",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250618-99416489"
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250618-26189883"
+    }
+  },
+  {
+    "date": "2025-07-26",
+    "category": "Peak-Weekend",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250609-84009732"
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250618-99416489"
+    }
+  },
+  {
+    "date": "2025-07-27",
+    "category": "Peak-Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250616-08179427"
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250609-84009732"
+    }
+  },
+  {
+    "date": "2025-07-28",
+    "category": "Peak-Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250618-32193656"
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250616-08179427"
+    }
+  },
+  {
+    "date": "2025-07-29",
+    "category": "Peak-Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250716-49188620"
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250618-32193656"
+    }
+  },
+  {
+    "date": "2025-07-30",
+    "category": "Peak-Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250716-49188620"
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250716-49188620"
+    }
+  },
+  {
+    "date": "2025-07-31",
+    "category": "Peak-Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250618-90824323"
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250716-49188620"
+    }
+  },
+  {
+    "date": "2025-08-01",
+    "category": "Peak-Weekend",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250718-48074568"
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250618-90824323"
+    }
+  },
+  {
+    "date": "2025-08-02",
+    "category": "Peak-Weekend",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250718-48074568"
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250718-48074568"
+    }
+  },
+  {
+    "date": "2025-08-03",
+    "category": "Peak-Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250718-48074568"
+    }
+  },
+  {
+    "date": "2025-08-04",
+    "category": "Peak-Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250711-87549051"
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-08-05",
+    "category": "Peak-Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250711-87549051"
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250711-87549051"
+    }
+  },
+  {
+    "date": "2025-08-06",
+    "category": "Peak-Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250717-73933522"
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250711-87549051"
+    }
+  },
+  {
+    "date": "2025-08-07",
+    "category": "Peak-Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250716-44981191"
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250717-73933522"
+    }
+  },
+  {
+    "date": "2025-08-08",
+    "category": "Peak-Weekend",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250716-44981191"
+    }
+  },
+  {
+    "date": "2025-08-09",
+    "category": "Peak-Weekend",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250726-16385516"
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-08-10",
+    "category": "Peak-Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250712-34308125"
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250726-16385516"
+    }
+  },
+  {
+    "date": "2025-08-11",
+    "category": "Peak-Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250712-34308125"
+    }
+  },
+  {
+    "date": "2025-08-12",
+    "category": "Peak-Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-08-13",
+    "category": "Peak-Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-08-14",
+    "category": "Peak-Weekend",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250702-19331672"
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-08-15",
+    "category": "Peak-Weekend",
+    "is_holiday": true,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250627-19092550"
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250702-19331672"
+    }
+  },
+  {
+    "date": "2025-08-16",
+    "category": "Peak-Weekend",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250627-19092550"
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250627-19092550"
+    }
+  },
+  {
+    "date": "2025-08-17",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250718-18256468"
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250627-19092550"
+    }
+  },
+  {
+    "date": "2025-08-18",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250719-94216095"
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250718-18256468"
+    }
+  },
+  {
+    "date": "2025-08-19",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250719-94216095"
+    }
+  },
+  {
+    "date": "2025-08-20",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-08-21",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250723-08076908"
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-08-22",
+    "category": "Weekend",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250712-52092149"
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250723-08076908"
+    }
+  },
+  {
+    "date": "2025-08-23",
+    "category": "Weekend",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250626-00322190"
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250712-52092149"
+    }
+  },
+  {
+    "date": "2025-08-24",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250820-3oc4M4"
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250626-00322190"
+    }
+  },
+  {
+    "date": "2025-08-25",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250708-09056440"
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250820-3oc4M4"
+    }
+  },
+  {
+    "date": "2025-08-26",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250708-09056440"
+    }
+  },
+  {
+    "date": "2025-08-27",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-08-28",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250814-bkF3ws"
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-08-29",
+    "category": "Weekend",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250814-bkF3ws"
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250814-bkF3ws"
+    }
+  },
+  {
+    "date": "2025-08-30",
+    "category": "Weekend",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250821-nDuNaU"
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250814-bkF3ws"
+    }
+  },
+  {
+    "date": "2025-08-31",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250702-39719708"
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250821-nDuNaU"
+    }
+  },
+  {
+    "date": "2025-09-01",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250702-39719708"
+    }
+  },
+  {
+    "date": "2025-09-02",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-09-03",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-09-04",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-09-05",
+    "category": "Weekend",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-09-06",
+    "category": "Weekend",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250812-EcjWui"
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-09-07",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250708-96493494"
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250812-EcjWui"
+    }
+  },
+  {
+    "date": "2025-09-08",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250708-96493494"
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250708-96493494"
+    }
+  },
+  {
+    "date": "2025-09-09",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250825-HHaAjk"
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250708-96493494"
+    }
+  },
+  {
+    "date": "2025-09-10",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250825-HHaAjk"
+    }
+  },
+  {
+    "date": "2025-09-11",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-09-12",
+    "category": "Weekend",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250814-3cjX95"
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-09-13",
+    "category": "Weekend",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250814-3cjX95"
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250814-3cjX95"
+    }
+  },
+  {
+    "date": "2025-09-14",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250814-3cjX95"
+    }
+  },
+  {
+    "date": "2025-09-15",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-09-16",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-09-17",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-09-18",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-09-19",
+    "category": "Weekend",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-09-20",
+    "category": "Weekend",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250814-VXpjqn"
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-09-21",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250814-VXpjqn"
+    }
+  },
+  {
+    "date": "2025-09-22",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250826-pVYGME"
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-09-23",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250912-4L8SuS"
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250826-pVYGME"
+    }
+  },
+  {
+    "date": "2025-09-24",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250919-VQ5zzr"
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250912-4L8SuS"
+    }
+  },
+  {
+    "date": "2025-09-25",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250911-RUGgDa"
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250919-VQ5zzr"
+    }
+  },
+  {
+    "date": "2025-09-26",
+    "category": "Weekend",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250911-RUGgDa"
+    }
+  },
+  {
+    "date": "2025-09-27",
+    "category": "Weekend",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250814-H7y2UU"
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-09-28",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250814-H7y2UU"
+    }
+  },
+  {
+    "date": "2025-09-29",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-09-30",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-10-01",
+    "category": "Peak-Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-10-02",
+    "category": "Peak-Weekend",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-10-03",
+    "category": "Peak-Weekend",
+    "is_holiday": true,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250908-wHrpk6"
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-10-04",
+    "category": "Peak-Weekend",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250908-wHrpk6"
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250908-wHrpk6"
+    }
+  },
+  {
+    "date": "2025-10-05",
+    "category": "Peak-Weekend",
+    "is_holiday": true,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250908-wHrpk6"
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250908-wHrpk6"
+    }
+  },
+  {
+    "date": "2025-10-06",
+    "category": "Peak-Weekend",
+    "is_holiday": true,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250916-gvVZYq"
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250908-wHrpk6"
+    }
+  },
+  {
+    "date": "2025-10-07",
+    "category": "Peak-Weekend",
+    "is_holiday": true,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250916-gvVZYq"
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250916-gvVZYq"
+    }
+  },
+  {
+    "date": "2025-10-08",
+    "category": "Peak-Weekend",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250916-gvVZYq"
+    }
+  },
+  {
+    "date": "2025-10-09",
+    "category": "Peak-Weekend",
+    "is_holiday": true,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250903-FXPdEe"
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-10-10",
+    "category": "Peak-Weekend",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250903-FXPdEe"
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250903-FXPdEe"
+    }
+  },
+  {
+    "date": "2025-10-11",
+    "category": "Peak-Weekend",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250903-FXPdEe"
+    }
+  },
+  {
+    "date": "2025-10-12",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-10-13",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-10-14",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-10-15",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-10-16",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-10-17",
+    "category": "Weekend",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-10-18",
+    "category": "Weekend",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-10-19",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250909-hKJyJY"
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-10-20",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250909-hKJyJY"
+    }
+  },
+  {
+    "date": "2025-10-21",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-10-22",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": "O-251020-en8WPs"
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-10-23",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": "O-251020-en8WPs"
+    }
+  },
+  {
+    "date": "2025-10-24",
+    "category": "Weekend",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": "O-251012-qJWsod"
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-10-25",
+    "category": "Weekend",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": "O-251012-qJWsod"
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": "O-251012-qJWsod"
+    }
+  },
+  {
+    "date": "2025-10-26",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": "O-251012-qJWsod"
+    }
+  },
+  {
+    "date": "2025-10-27",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-10-28",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250910-Gc8SQJ"
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-10-29",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250910-Gc8SQJ"
+    }
+  },
+  {
+    "date": "2025-10-30",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-10-31",
+    "category": "Weekend",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-11-01",
+    "category": "Weekend",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-11-02",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-11-03",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": "O-251023-hjvvJk"
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-11-04",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": "O-251023-hjvvJk"
+    }
+  },
+  {
+    "date": "2025-11-05",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-11-06",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-11-07",
+    "category": "Weekend",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-11-08",
+    "category": "Weekend",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250909-xYF9BJ"
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-11-09",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250909-xYF9BJ"
+    }
+  },
+  {
+    "date": "2025-11-10",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-11-11",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-11-12",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-11-13",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250923-8BdTp5"
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-11-14",
+    "category": "Weekend",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250923-8BdTp5"
+    }
+  },
+  {
+    "date": "2025-11-15",
+    "category": "Weekend",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-11-16",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-11-17",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-11-18",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-11-19",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-11-20",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-11-21",
+    "category": "Weekend",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-11-22",
+    "category": "Weekend",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-11-23",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-11-24",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-11-25",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-11-26",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-11-27",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-11-28",
+    "category": "Weekend",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-11-29",
+    "category": "Weekend",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250930-RHJQ7u"
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-11-30",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": "O-250930-RHJQ7u"
+    }
+  },
+  {
+    "date": "2025-12-01",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-12-02",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-12-03",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-12-04",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-12-05",
+    "category": "Weekend",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-12-06",
+    "category": "Weekend",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-12-07",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-12-08",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": "O-251010-4u6F6W"
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-12-09",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": "O-251010-4u6F6W"
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": "O-251010-4u6F6W"
+    }
+  },
+  {
+    "date": "2025-12-10",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": "O-251010-4u6F6W"
+    }
+  },
+  {
+    "date": "2025-12-11",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-12-12",
+    "category": "Weekend",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-12-13",
+    "category": "Weekend",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-12-14",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-12-15",
+    "category": "Peak-Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-12-16",
+    "category": "Peak-Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-12-17",
+    "category": "Peak-Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-12-18",
+    "category": "Peak-Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-12-19",
+    "category": "Peak-Weekend",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": "O-251023-E2LVRk"
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-12-20",
+    "category": "Peak-Weekend",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": true,
+      "occupied_order_id": "O-251023-E2LVRk"
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": "O-251023-E2LVRk"
+    }
+  },
+  {
+    "date": "2025-12-21",
+    "category": "Peak-Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": true,
+      "occupied_order_id": "O-251023-E2LVRk"
+    }
+  },
+  {
+    "date": "2025-12-22",
+    "category": "Peak-Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-12-23",
+    "category": "Peak-Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-12-24",
+    "category": "Peak-Weekend",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-12-25",
+    "category": "Peak-Weekend",
+    "is_holiday": true,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-12-26",
+    "category": "Peak-Weekend",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-12-27",
+    "category": "Peak-Weekend",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-12-28",
+    "category": "Peak-Weekend",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-12-29",
+    "category": "Peak-Weekend",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-12-30",
+    "category": "Peak-Weekend",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2025-12-31",
+    "category": "Peak-Weekend",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-01-01",
+    "category": "Peak-Weekend",
+    "is_holiday": true,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-01-02",
+    "category": "Peak-Weekend",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-01-03",
+    "category": "Peak-Weekend",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-01-04",
+    "category": "Peak-Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-01-05",
+    "category": "Peak-Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-01-06",
+    "category": "Peak-Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-01-07",
+    "category": "Peak-Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-01-08",
+    "category": "Peak-Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-01-09",
+    "category": "Peak-Weekend",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-01-10",
+    "category": "Peak-Weekend",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-01-11",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-01-12",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-01-13",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-01-14",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-01-15",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-01-16",
+    "category": "Weekend",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-01-17",
+    "category": "Weekend",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-01-18",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-01-19",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-01-20",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-01-21",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-01-22",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-01-23",
+    "category": "Weekend",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-01-24",
+    "category": "Weekend",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-01-25",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-01-26",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-01-27",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-01-28",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-01-29",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-01-30",
+    "category": "Weekend",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-01-31",
+    "category": "Weekend",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-02-01",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-02-02",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-02-03",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-02-04",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-02-05",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-02-06",
+    "category": "Weekend",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-02-07",
+    "category": "Weekend",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-02-08",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-02-09",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-02-10",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-02-11",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-02-12",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-02-13",
+    "category": "Peak-Weekend",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-02-14",
+    "category": "Peak-Weekend",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-02-15",
+    "category": "Peak-Weekend",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-02-16",
+    "category": "Peak-Weekend",
+    "is_holiday": true,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-02-17",
+    "category": "Peak-Weekend",
+    "is_holiday": true,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-02-18",
+    "category": "Peak-Weekend",
+    "is_holiday": true,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-02-19",
+    "category": "Peak-Weekend",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-02-20",
+    "category": "Peak-Weekend",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-02-21",
+    "category": "Peak-Weekend",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-02-22",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-02-23",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-02-24",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-02-25",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-02-26",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-02-27",
+    "category": "Weekend",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-02-28",
+    "category": "Weekend",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-03-01",
+    "category": "Weekend",
+    "is_holiday": true,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-03-02",
+    "category": "Weekend",
+    "is_holiday": true,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-03-03",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-03-04",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-03-05",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-03-06",
+    "category": "Weekend",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-03-07",
+    "category": "Weekend",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-03-08",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-03-09",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-03-10",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-03-11",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-03-12",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-03-13",
+    "category": "Weekend",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-03-14",
+    "category": "Weekend",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-03-15",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-03-16",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-03-17",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-03-18",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-03-19",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-03-20",
+    "category": "Weekend",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-03-21",
+    "category": "Weekend",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-03-22",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-03-23",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-03-24",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-03-25",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-03-26",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-03-27",
+    "category": "Weekend",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-03-28",
+    "category": "Weekend",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-03-29",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-03-30",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-03-31",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-04-01",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-04-02",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-04-03",
+    "category": "Weekend",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-04-04",
+    "category": "Weekend",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-04-05",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-04-06",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-04-07",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-04-08",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-04-09",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-04-10",
+    "category": "Weekend",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-04-11",
+    "category": "Weekend",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-04-12",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-04-13",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-04-14",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-04-15",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-04-16",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-04-17",
+    "category": "Weekend",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-04-18",
+    "category": "Weekend",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-04-19",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-04-20",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-04-21",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-04-22",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-04-23",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-04-24",
+    "category": "Weekend",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-04-25",
+    "category": "Weekend",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-04-26",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-04-27",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-04-28",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-04-29",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-04-30",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-05-01",
+    "category": "Weekend",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-05-02",
+    "category": "Weekend",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-05-03",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-05-04",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-05-05",
+    "category": "Weekday",
+    "is_holiday": true,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-05-06",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-05-07",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-05-08",
+    "category": "Weekend",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-05-09",
+    "category": "Weekend",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-05-10",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-05-11",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-05-12",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-05-13",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-05-14",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-05-15",
+    "category": "Weekend",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-05-16",
+    "category": "Weekend",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-05-17",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-05-18",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-05-19",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-05-20",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-05-21",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-05-22",
+    "category": "Weekend",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-05-23",
+    "category": "Weekend",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-05-24",
+    "category": "Weekend",
+    "is_holiday": true,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-05-25",
+    "category": "Weekend",
+    "is_holiday": true,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-05-26",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-05-27",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-05-28",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-05-29",
+    "category": "Weekend",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-05-30",
+    "category": "Weekend",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  },
+  {
+    "date": "2026-05-31",
+    "category": "Weekday",
+    "is_holiday": false,
+    "checkin": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    },
+    "checkout": {
+      "is_occupied": false,
+      "occupied_order_id": null
+    }
+  }
+]
