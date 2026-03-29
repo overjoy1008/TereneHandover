@@ -126,14 +126,8 @@ terene-db-server/
 ## Historical / No Longer Used Code
 
 - `instances/coupons/`
-  - `coupon_definitions_250618` 및 `coupon_instances_250618` 이전 형태의 쿠폰 관련 스키마 흔적입니다.
 - `instances/customers/`
-  - `customers_250618` 이전 형태의 고객 관련 스키마 흔적입니다.
 - `instances/days/`
-  - `v3`의 `days_250928` 체계 이전의 날짜 관련 스키마 흔적입니다.
 - `instances/holidays/`
-  - 공휴일 데이터 관련 별도 스키마입니다.
 - `instances/orders/`
-  - `orders_250618` 이전 형태의 주문 관련 스키마 흔적입니다.
 - `src/routes/test.routes.js`, `src/controllers/test.controller.js`, `src/services/test.service.js`
-  - 이름 기준으로 테스트/검증 목적 파일로 보이며, 운영 핵심 경로와는 구분해서 보는 편이 좋습니다.
