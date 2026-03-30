@@ -48,6 +48,17 @@ docker run --rm -p 3000:3000 --env-file .env terene-notifier-server
 - 로컬에서 Docker로 테스트할 때는 `.env` 파일에 메일 발송, SOLAPI 발송, DB 연동에 필요한 값을 넣어야 합니다.
 - Render에서는 `PORT`가 자동으로 들어오지만, 로컬 Docker 테스트에서는 컨테이너 기본 포트를 `3000`으로 사용하면 됩니다.
 
+## Read-only Checks
+
+```bash
+curl http://localhost:3000/api/health
+```
+
+- `/api/health`
+  - 가장 안전한 헬스체크용 엔드포인트입니다.
+- 이 서버의 다른 주요 엔드포인트는 메일 발송, 문자 발송, 알림톡 발송, 큐 처리, 인증 흐름과 연결되어 있어서 단순 읽기 테스트에는 적합하지 않습니다.
+- 읽기 전용으로는 우선 `/api/health`까지만 확인하는 것을 권장합니다.
+
 ## Directory Structure
 
 ```text

@@ -29,6 +29,22 @@ docker run --rm -p 3001:3001 --env-file .env terene-db-server
 - 로컬에서 Docker로 테스트할 때는 `.env` 파일에 `DATABASE_URL`을 넣어야 합니다.
 - Render에서는 `PORT`가 자동으로 들어오지만, 로컬 Docker 테스트에서는 컨테이너 기본 포트를 `3001`로 사용하면 됩니다.
 
+## Read-only Checks
+
+```bash
+curl http://localhost:3001/api/health
+curl http://localhost:3001/api/v2/customers
+curl http://localhost:3001/api/v3/settings
+```
+
+- `/api/health`
+  - 가장 안전한 헬스체크용 엔드포인트입니다.
+- `/api/v2/customers`
+  - 회원 데이터를 읽기 전용으로 확인할 수 있습니다.
+- `/api/v3/settings`
+  - 관리자 설정 데이터를 읽기 전용으로 확인할 수 있습니다.
+- 환경에 따라 실제 데이터가 비어 있거나, DB 연결이 되지 않으면 오류가 날 수 있습니다.
+
 ## Directory Structure
 
 ```text

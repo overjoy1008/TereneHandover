@@ -32,6 +32,17 @@ docker run --rm -p 4000:4000 --env-file .env terene-toss-server-api
 - 로컬에서 Docker로 테스트할 때는 `.env` 파일에 `TOSS_SECRET_KEY`, `TOSS_SECRET_TEST_KEY`를 넣어야 합니다.
 - Render에서는 `PORT`가 자동으로 들어오지만, 로컬 Docker 테스트에서는 컨테이너 기본 포트를 `4000`으로 사용하면 됩니다.
 
+## Read-only Checks
+
+```bash
+curl -i http://localhost:4000/
+```
+
+- 현재 코드 기준으로 별도의 GET 헬스체크 엔드포인트는 없습니다.
+- `/confirm`은 `POST` 전용 결제 확인 엔드포인트이므로 읽기 전용 테스트에 적합하지 않습니다.
+- 실제 Toss 결제가 먼저 정상적으로 생성되어 있어야 의미 있는 응답을 받을 수 있습니다.
+- 대신 `http://localhost:4000/`에 요청했을 때 `404 Not Found` 또는 유사한 HTTP 응답이 오면 서버 프로세스가 정상적으로 떠 있고 포트가 열려 있다는 뜻으로 확인할 수 있습니다.
+
 ## Directory Structure
 
 ```text
