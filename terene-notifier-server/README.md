@@ -78,13 +78,29 @@ terene-notifier-server/
 └─ package.json
 ```
 
+## Directory / File Notes
+
+- `index.js`
+  - 서버 실행 진입점입니다.
+  - Express, CORS, 쿠키 파서, 라우터, 크론 작업, 큐 워커를 연결합니다.
+- `cron/`
+  - 주기적으로 실행해야 하는 작업이 들어 있습니다.
+  - 체크인/체크아웃 시간 점검, 주기적 DB 업데이트(쿠폰 만료일 체크 등), 알림 발송 트리거가 여기에 포함됩니다.
+- `queue/`
+  - 예약 관련 DB 수정/알림톡 요청을 A/C/E/F/G/... 등 use case에 따라 큐에 넣고 순서대로 처리하는 코드가 들어 있습니다.
+- `routes/`
+  - 이메일, 문자, 알림톡, Auth 인증 등 API 엔드포인트가 정의되어 있습니다.
+- `templates/`
+  - 이메일 및 SNS 메시지 템플릿(한글 및 영어, 영어 이메일 PDF)과 관련 리소스가 들어 있습니다.
+- `utils/`
+  - 카카오 자동 알림톡 전송 시 요구되는 SOLAPI 템플릿 ID와 변수명 정보가 들어있습니다.
+- `package.json`
+  - 실행 스크립트와 의존성 목록이 들어 있습니다.
+- `package-lock.json`
+  - 설치된 패키지 버전 고정을 위한 lock 파일입니다.
+
 ## Historical / No Longer Used Code
 
-- `cron/scheduler.duplicate.js`
-  - 파일명 기준으로 중복/백업 성격의 파일입니다.
-- `routes/*.v2.js`
-  - 버전 분리 과정에서 남아 있는 이행용 코드일 가능성이 있는 파일들입니다.
-  - 예:
-  - `routes/email.v2.js`
-  - `routes/kakao.v2.js`
-  - `routes/sms.v2.js`
+- cron/scheduler.duplicate.js
+- routes/email.js
+- routes/sms.js

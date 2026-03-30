@@ -72,19 +72,20 @@ terene-db-server/
   - Express 앱을 띄우고 `PORT` 또는 기본 포트 `3001`로 서버를 실행합니다.
 - `instances/`
   - DB에 존재하는 테이블의 스키마와 예시 인스턴스를 포함합니다.
+  - v2에 추가된 테이블은 전부 *_250618/에, v3에서 추가된 테이블은 전부 patch_250928/에 있습니다.
 - `src/app.js`
   - 공통 Express 설정과 라우터 연결을 담당합니다.
 - `src/models/db.js`
   - PostgreSQL 연결 설정을 담당합니다.
   - `.env`의 `DATABASE_URL`을 읽어 DB connection pool을 생성합니다.
 - `src/controllers/`
-  - 각 API 요청/응답 처리 계층입니다.
+  - 각 API 요청/응답 처리 계층입니다. entities(v2)와 v3가 존재합니다.
 - `src/services/`
-  - 실제 SQL 실행과 비즈니스 로직을 담당하는 계층입니다.
+  - 실제 SQL 실행과 비즈니스 로직을 담당하는 계층입니다. entities(v2)와 v3가 존재합니다.
 - `src/routes/`
-  - 각 엔드포인트 경로를 정의하는 라우터 계층입니다.
+  - 각 엔드포인트 경로를 정의하는 라우터 계층입니다. entities(v2)와 v3가 존재합니다.
 
-## Reservation Domain
+## Reservation Domain (v2)
 
 - 예약
   - 테이블/스키마 기준: `instances/orders_250618/`
@@ -114,7 +115,7 @@ terene-db-server/
   - 테이블/스키마 기준: `instances/customers_250618/`
   - API 기준: `/api/v2/customers`
 
-## Admin Settings Domain
+## Admin Settings Domain (v3)
 
 - 관리자 설정 관련 스키마는 주로 `instances/patch_250928/` 기준으로 정리되어 있습니다.
 - 캘린더
@@ -141,9 +142,14 @@ terene-db-server/
 
 ## Historical / No Longer Used Code
 
-- `instances/coupons/`
-- `instances/customers/`
-- `instances/days/`
-- `instances/holidays/`
-- `instances/orders/`
-- `src/routes/test.routes.js`, `src/controllers/test.controller.js`, `src/services/test.service.js`
+- instances/coupons/
+- instances/customers/
+- instances/days/
+- instances/holidays/
+- instances/orders/
+- src/routes/coupon.routes.js, src/controllers/coupon.controller.js, src/services/coupon.service.js
+- src/routes/customer.routes.js, src/controllers/customer.controller.js, src/services/customer.service.js
+- src/routes/day.routes.js, src/controllers/day.controller.js, src/services/day.service.js
+- src/routes/holiday.routes.js, src/controllers/holiday.controller.js, src/services/holiday.service.js
+- src/routes/order.routes.js, src/controllers/order.controller.js, src/services/order.service.js
+- src/routes/test.routes.js, src/controllers/test.controller.js, src/services/test.service.js
