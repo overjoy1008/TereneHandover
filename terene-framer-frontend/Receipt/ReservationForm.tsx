@@ -20,6 +20,7 @@ import {
     createAdminReservationMessage,
 } from "../Notifier/messages.ts"
 import { LoadingOverlay } from "../Components/LoadingOverlay.tsx"
+import { getReservationDays } from "../Api/reservations.ts"
 
 // ✅ 추가: 계산/필터 함수 import (PriceDisplay와 동일 파이프라인 사용)
 import {
@@ -934,9 +935,7 @@ export function checkRevisitAndCouponCode(
                 // ----------------------------
                 let categoryMap: Record<string, any> = {}
                 try {
-                    const holidayRes = await fetch(
-                        "https://terene-db-server.onrender.com/api/v3/days"
-                    )
+                    const holidayRes = await getReservationDays()
                     const days = await holidayRes.json()
 
                     const rawMap: Record<string, string> = {}

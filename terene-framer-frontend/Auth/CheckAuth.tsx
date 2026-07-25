@@ -16,6 +16,7 @@ import {
 import { createReservationMessage } from "../Notifier/messages.ts"
 import { sendSMS, sendEmail } from "../Notifier/notify.ts"
 import { ADMIN_PHONES, ADMIN_EMAILS } from "../Notifier/adminContacts.ts"
+import { getReservationDays } from "../Api/reservations.ts"
 
 const useAuthStore = createStore({
     temp_id: null,
@@ -456,9 +457,7 @@ export function safeKeep3Login(
                     if (!res.ok) throw new Error("인증 실패")
                     const user = await res.json()
 
-                    const dayRes = await fetch(
-                        "https://terene-db-server.onrender.com/api/v3/days"
-                    )
+                    const dayRes = await getReservationDays()
                     const dayData = await dayRes.json()
                     const dayInfoMap = new Map()
                     dayData.forEach((item) => {
@@ -663,9 +662,7 @@ export function safeKeep3LoginNonmember(
                         return
                     }
 
-                    const dayRes = await fetch(
-                        "https://terene-db-server.onrender.com/api/v3/days"
-                    )
+                    const dayRes = await getReservationDays()
                     const dayData = await dayRes.json()
                     const dayInfoMap = new Map()
                     dayData.forEach((item) => {
@@ -875,9 +872,7 @@ export function safeKeep3LoginCustom(
                         })
                     }
 
-                    const dayRes = await fetch(
-                        "https://terene-db-server.onrender.com/api/v3/days"
-                    )
+                    const dayRes = await getReservationDays()
                     const dayData = await dayRes.json()
                     const dayInfoMap = new Map()
                     dayData.forEach((item) => {
@@ -1002,9 +997,7 @@ export function safeKeep3LoginCustomNonmember(
                         remarks: null,
                     })
 
-                    const dayRes = await fetch(
-                        "https://terene-db-server.onrender.com/api/v3/days"
-                    )
+                    const dayRes = await getReservationDays()
                     const dayData = await dayRes.json()
                     const dayInfoMap = new Map()
                     dayData.forEach((item) => {
@@ -1453,9 +1446,7 @@ export function withDaysCache(
             const fetchAll = async () => {
                 try {
                     const [days, categories, designs] = await Promise.all([
-                        fetch(
-                            "https://terene-db-server.onrender.com/api/v3/days"
-                        ).then((r) => r.json()),
+                        getReservationDays().then((r) => r.json()),
                         fetch(
                             "https://terene-db-server.onrender.com/api/v3/days-category"
                         ).then((r) => r.json()),
