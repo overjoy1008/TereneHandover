@@ -4,6 +4,7 @@ import { useStore } from "../../Store/MainStore.tsx"
 import { formatDate } from "../../Utils/DateUtils.tsx"
 import { PaginationArrow } from "../../Components/PaginationArrow.tsx"
 import { LoadingOverlay } from "../../Components/LoadingOverlay.tsx"
+import { getReservationDays } from "../../Api/reservations.ts"
 
 type DateObj = {
     year: number
@@ -35,7 +36,7 @@ export default function LastDateStatus() {
 
         setIsLoading(true)
 
-        fetch("https://terene-db-server.onrender.com/api/v3/days")
+        getReservationDays()
             .then((res) => res.json())
             .then((data) => {
                 const found = data.find(

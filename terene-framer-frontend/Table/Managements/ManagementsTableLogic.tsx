@@ -1,6 +1,7 @@
 // ManagementTableLogic.tsx
 import * as React from "react"
 import { useEffect, useMemo, useRef, useState } from "react"
+import { getReservationDays } from "../../Api/reservations.ts"
 
 const V3_BASE = "https://terene-db-server.onrender.com/api/v3"
 const V2_BASE = "https://terene-db-server.onrender.com/api/v2"
@@ -235,7 +236,7 @@ export function ManagementsTableLogic() {
         try {
             const [daysRes, mgmtRes, ordersRes, settlementsRes] =
                 await Promise.all([
-                    fetch(`${V3_BASE}/days`),
+                    getReservationDays(),
                     fetch(`${V3_BASE}/managements`),
                     fetch(`${V2_BASE}/orders`),
                     fetch(`${V2_BASE}/settlements`),

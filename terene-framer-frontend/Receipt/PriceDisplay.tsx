@@ -17,6 +17,7 @@ import {
 import { formatDate, parseDate } from "../Utils/DateUtils.tsx"
 import { motion } from "framer-motion"
 import { useDayCategoryDefinitions } from "./useDayCategoryDefinitions.ts"
+import { getReservationDays } from "../Api/reservations.ts"
 
 const FadeIn: React.FC<{ children: React.ReactNode }> = ({ children }) => (
     <motion.div
@@ -38,7 +39,7 @@ export function useHolidayCategoryMap() {
     const [isLoading, setIsLoading] = React.useState(true)
 
     React.useEffect(() => {
-        fetch("https://terene-db-server.onrender.com/api/v3/days")
+        getReservationDays()
             .then((res) => res.json())
             .then((data) => {
                 const map: Record<string, string> = {}

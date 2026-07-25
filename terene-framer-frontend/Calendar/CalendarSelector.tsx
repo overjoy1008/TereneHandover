@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react"
 import { useStore } from "../Store/MainStore.tsx"
 import { WeekSelector } from "./WeekSelector.tsx"
 import { addPropertyControls, ControlType } from "framer"
+import { getReservationDays } from "../Api/reservations.ts"
 
 type Mode = "customer" | "admin"
 
@@ -12,7 +13,7 @@ function useHolidayDataOnce(location?: string, daysVersion?: number) {
     useEffect(() => {
         if (!location) return
 
-        fetch("https://terene-db-server.onrender.com/api/v3/days")
+        getReservationDays()
             .then((res) => res.json())
             .then((data) => {
                 const filtered = data.filter(

@@ -4,6 +4,7 @@ import { useStore } from "../../Store/MainStore.tsx"
 import MinimalButton from "../../Components/MinimalButton.tsx"
 import SpecificDateRow from "./SpecificDateRow.tsx"
 import { LoadingOverlay } from "../../Components/LoadingOverlay.tsx"
+import { getReservationDays } from "../../Api/reservations.ts"
 
 type DateObj = {
     year: number
@@ -63,9 +64,7 @@ export default function SpecificDateSettings() {
 
         setIsLoading(true)
 
-        const res = await fetch(
-            "https://terene-db-server.onrender.com/api/v3/days"
-        )
+        const res = await getReservationDays()
         const data = await res.json()
 
         const dateKeySet = new Set(
