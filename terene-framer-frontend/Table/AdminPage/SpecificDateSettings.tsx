@@ -4,7 +4,10 @@ import { useStore } from "../../Store/MainStore.tsx"
 import MinimalButton from "../../Components/MinimalButton.tsx"
 import SpecificDateRow from "./SpecificDateRow.tsx"
 import { LoadingOverlay } from "../../Components/LoadingOverlay.tsx"
-import { getReservationDays } from "../../Api/reservations.ts"
+import {
+    getReservationDays,
+    invalidateReservationDays,
+} from "../../Api/reservations.ts"
 
 type DateObj = {
     year: number
@@ -320,6 +323,7 @@ export default function SpecificDateSettings() {
                         if (isBulkEditing) {
                             await saveAllGroups()
                             setEditingKeys(new Set())
+                            invalidateReservationDays()
                             await fetchDays()
                             setStore({ daysVersion: store.daysVersion + 1 })
                         } else {
@@ -388,6 +392,7 @@ export default function SpecificDateSettings() {
                                         next.delete(key)
                                         return next
                                     })
+                                    invalidateReservationDays()
                                     await fetchDays()
                                     setStore({
                                         daysVersion: store.daysVersion + 1,
