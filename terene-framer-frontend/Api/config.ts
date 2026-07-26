@@ -43,7 +43,7 @@ const PROD_ORIGINS: ApiOrigins = {
     site: "https://terene.kr",
     imagekitUpload: "https://upload.imagekit.io",
     imagekitApi: "https://api.imagekit.io",
-    gateway: "https://terene-gateway-dev.onrender.com",
+    gateway: "https://terene-gateway.onrender.com",
 }
 
 /** Mirrors PROD until dedicated DEV hosts are defined. */
