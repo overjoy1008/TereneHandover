@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react"
 import CssStyles from "./CssStyles.tsx"
+import { getOrder } from "../Api/reservations.ts"
 
 const clientKey = "live_gck_mBZ1gQ4YVXWWyAo0R0X93l2KPoqN" // 라이브 API 키, 외부 공개 금지
 const clientTestKey = "test_gck_DpexMgkW36b5kBmklzXE3GbR5ozO" // 테스트 API 키, 외부 공개 금지
@@ -26,26 +27,41 @@ export function CheckoutPageForeignCard() {
     // 주문 정보 가져오기
     useEffect(() => {
         async function fetchOrderDetails() {
-            if (!orderId) return
+            if (!orderId) {
+                console.warn(
+                    "Checkout (foreign card): orderId query param is missing."
+                )
+                return
+            }
 
             try {
-                const res = await fetch(
-                    `https://terene-db-server.onrender.com/api/v2/orders`
-                )
-                const allOrders = await res.json()
+                const res = await getOrder(orderId)
 
-                const matched = allOrders.find(
-                    (o: any) => o.order_id === orderId
-                )
+                if (!res.ok) {
+                    if (res.status === 404) {
+                        console.warn(
+                            "해당 orderId를 가진 주문이 없습니다.",
+                            orderId
+                        )
+                    } else {
+                        console.error(
+                            `주문 조회 실패: HTTP ${res.status}`,
+                            orderId
+                        )
+                    }
+                    return
+                }
 
-                if (matched) {
+                const matched = await res.json()
+
+                if (matched && matched.order_id) {
                     setOrder(matched)
                     setAmount({
                         currency: "KRW",
                         value: Number(matched.final_price),
                     })
                 } else {
-                    console.warn("해당 orderId를 가진 주문이 없습니다.")
+                    console.warn("해당 orderId를 가진 주문이 없습니다.", orderId)
                 }
             } catch (error) {
                 console.error("주문 정보를 불러오는 중 오류 발생:", error)
