@@ -1,5 +1,6 @@
 
 import * as React from "react"
+import { getDaysCategory } from "../Api/daysCategory.ts"
 
 export type DayCategoryDef = {
     eng_name: string
@@ -14,17 +15,29 @@ export function useDayCategoryDefinitions() {
     const [isLoading, setIsLoading] = React.useState(true)
 
     React.useEffect(() => {
-        fetch("https://terene-db-server.onrender.com/api/v3/days-category")
-            .then((res) => res.json())
-            .then((rows: DayCategoryDef[]) => {
+        let cancelled = false
+
+        getDaysCategory()
+            .then((rows) => {
+                if (cancelled) return
                 const next: Record<string, DayCategoryDef> = {}
                 for (const row of rows) {
                     next[row.eng_name] = row
                 }
                 setMap(next)
             })
-            .catch((e) => console.error("days-category fetch error", e))
-            .finally(() => setIsLoading(false))
+            .catch((e) => {
+                if (!cancelled) {
+                    console.error("days-category fetch error", e)
+                }
+            })
+            .finally(() => {
+                if (!cancelled) setIsLoading(false)
+            })
+
+        return () => {
+            cancelled = true
+        }
     }, [])
 
     return { categoryDefs: map, isLoading }

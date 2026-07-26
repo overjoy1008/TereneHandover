@@ -5,6 +5,7 @@ import { useStore } from "../../Store/MainStore.tsx"
 import MinimalButton from "../../Components/MinimalButton.tsx"
 import MultiPurposeInput from "../../Components/MultiPurposeInput.tsx"
 import { LoadingOverlay } from "../../Components/LoadingOverlay.tsx"
+import { invalidateDaysCategory } from "../../Api/daysCategory.ts"
 
 type Category = {
     eng_name: string
@@ -101,6 +102,7 @@ export default function DaysCategory() {
             )
         }
 
+        invalidateDaysCategory()
         await fetchCategories()
         setStore({ daysVersion: store.daysVersion + 1 })
         setIsEditing(false)
