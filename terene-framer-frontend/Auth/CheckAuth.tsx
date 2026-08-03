@@ -16,6 +16,11 @@ import {
 import { createReservationMessage } from "../Notifier/messages.ts"
 import { sendSMS, sendEmail } from "../Notifier/notify.ts"
 import { ADMIN_PHONES, ADMIN_EMAILS } from "../Notifier/adminContacts.ts"
+import {
+    login,
+    me as fetchAuthMe,
+    logout as requestAuthLogout,
+} from "../Api/auth.ts"
 import { getReservationDays } from "../Api/reservations.ts"
 
 const useAuthStore = createStore({
@@ -106,20 +111,13 @@ export function safeRequestLogin(
         const handleClick = async () => {
             try {
                 // login logic
-                const loginRes = await fetch(
-                    "https://terene-notifier-server.onrender.com/api/auth/login",
-                    {
-                        method: "POST",
-                        headers: { "Content-Type": "application/json" },
-                        body: JSON.stringify({
-                            id: authStore.temp_id,
-                            password: authStore.temp_password,
-                            mode: authStore.checkedPermanentLogin
-                                ? "permanent"
-                                : "temporary",
-                        }),
-                    }
-                )
+                const loginRes = await login({
+                    id: authStore.temp_id,
+                    password: authStore.temp_password,
+                    mode: authStore.checkedPermanentLogin
+                        ? "permanent"
+                        : "temporary",
+                })
                 const data = await loginRes.json()
                 if (!loginRes.ok || !data.token) {
                     alert("로그인 실패: 아이디 또는 비밀번호가 틀렸습니다.")
@@ -128,14 +126,7 @@ export function safeRequestLogin(
                 localStorage.setItem("token", data.token)
 
                 // me logic
-                const meRes = await fetch(
-                    "https://terene-notifier-server.onrender.com/api/auth/me",
-                    {
-                        headers: {
-                            Authorization: `Bearer ${data.token}`,
-                        },
-                    }
-                )
+                const meRes = await fetchAuthMe(data.token)
                 if (!meRes.ok) {
                     alert("로그인 상태 확인 실패")
                     return
@@ -184,20 +175,13 @@ export function safeRequestReservation(
         const handleClick = async () => {
             try {
                 // login logic
-                const loginRes = await fetch(
-                    "https://terene-notifier-server.onrender.com/api/auth/login",
-                    {
-                        method: "POST",
-                        headers: { "Content-Type": "application/json" },
-                        body: JSON.stringify({
-                            id: authStore.temp_id,
-                            password: authStore.temp_password,
-                            mode: authStore.checkedPermanentLogin
-                                ? "permanent"
-                                : "temporary",
-                        }),
-                    }
-                )
+                const loginRes = await login({
+                    id: authStore.temp_id,
+                    password: authStore.temp_password,
+                    mode: authStore.checkedPermanentLogin
+                        ? "permanent"
+                        : "temporary",
+                })
                 const data = await loginRes.json()
                 if (!loginRes.ok || !data.token) {
                     alert("로그인 실패: 아이디 또는 비밀번호가 틀렸습니다.")
@@ -206,14 +190,7 @@ export function safeRequestReservation(
                 localStorage.setItem("token", data.token)
 
                 // me logic
-                const meRes = await fetch(
-                    "https://terene-notifier-server.onrender.com/api/auth/me",
-                    {
-                        headers: {
-                            Authorization: `Bearer ${data.token}`,
-                        },
-                    }
-                )
+                const meRes = await fetchAuthMe(data.token)
                 if (!meRes.ok) {
                     alert("로그인 상태 확인 실패")
                     return
@@ -267,14 +244,7 @@ export function safeKeepMemberLogin(
                     // me-only logic
                     const token = localStorage.getItem("token")
                     if (!token) throw new Error("토큰 없음")
-                    const res = await fetch(
-                        "https://terene-notifier-server.onrender.com/api/auth/me",
-                        {
-                            headers: {
-                                Authorization: `Bearer ${token}`,
-                            },
-                        }
-                    )
+                    const res = await fetchAuthMe(token)
                     if (!res.ok) throw new Error("인증 실패")
                     const user = await res.json()
 
@@ -313,14 +283,7 @@ export function safeKeep1Login(
                     // me-only logic
                     const token = localStorage.getItem("token")
                     if (!token) throw new Error("토큰 없음")
-                    const res = await fetch(
-                        "https://terene-notifier-server.onrender.com/api/auth/me",
-                        {
-                            headers: {
-                                Authorization: `Bearer ${token}`,
-                            },
-                        }
-                    )
+                    const res = await fetchAuthMe(token)
                     if (!res.ok) throw new Error("인증 실패")
                     const user = await res.json()
 
@@ -357,14 +320,7 @@ export function safeKeep2Login(
                     // me-only logic
                     const token = localStorage.getItem("token")
                     if (!token) throw new Error("토큰 없음")
-                    const res = await fetch(
-                        "https://terene-notifier-server.onrender.com/api/auth/me",
-                        {
-                            headers: {
-                                Authorization: `Bearer ${token}`,
-                            },
-                        }
-                    )
+                    const res = await fetchAuthMe(token)
                     if (!res.ok) throw new Error("인증 실패")
                     if (res.ok) {
                         const user = await res.json()
@@ -446,14 +402,7 @@ export function safeKeep3Login(
                     // me-only logic
                     const token = localStorage.getItem("token")
                     if (!token) throw new Error("토큰 없음")
-                    const res = await fetch(
-                        "https://terene-notifier-server.onrender.com/api/auth/me",
-                        {
-                            headers: {
-                                Authorization: `Bearer ${token}`,
-                            },
-                        }
-                    )
+                    const res = await fetchAuthMe(token)
                     if (!res.ok) throw new Error("인증 실패")
                     const user = await res.json()
 
@@ -774,14 +723,7 @@ export function safeKeep2LoginCustom(
                     // me-only logic
                     const token = localStorage.getItem("token")
                     if (!token) throw new Error("토큰 없음")
-                    const res = await fetch(
-                        "https://terene-notifier-server.onrender.com/api/auth/me",
-                        {
-                            headers: {
-                                Authorization: `Bearer ${token}`,
-                            },
-                        }
-                    )
+                    const res = await fetchAuthMe(token)
                     if (!res.ok) throw new Error("인증 실패")
                     if (res.ok) {
                         const user = await res.json()
@@ -842,14 +784,7 @@ export function safeKeep3LoginCustom(
                     // me-only logic
                     const token = localStorage.getItem("token")
                     if (!token) throw new Error("토큰 없음")
-                    const res = await fetch(
-                        "https://terene-notifier-server.onrender.com/api/auth/me",
-                        {
-                            headers: {
-                                Authorization: `Bearer ${token}`,
-                            },
-                        }
-                    )
+                    const res = await fetchAuthMe(token)
                     if (!res.ok) {
                         setStore({
                             membership_number: null,
@@ -1099,14 +1034,7 @@ export function safeKeepAdminLogin(
                     // me-only logic
                     const token = localStorage.getItem("token")
                     if (!token) throw new Error("토큰 없음")
-                    const res = await fetch(
-                        "https://terene-notifier-server.onrender.com/api/auth/me",
-                        {
-                            headers: {
-                                Authorization: `Bearer ${token}`,
-                            },
-                        }
-                    )
+                    const res = await fetchAuthMe(token)
                     if (!res.ok) throw new Error("인증 실패")
                     if (res.ok) {
                         const user = await res.json()
@@ -1144,14 +1072,7 @@ export function getMemberInfo(
                     // me-only logic
                     const token = localStorage.getItem("token")
                     if (!token) throw new Error("토큰 없음")
-                    const res = await fetch(
-                        "https://terene-notifier-server.onrender.com/api/auth/me",
-                        {
-                            headers: {
-                                Authorization: `Bearer ${token}`,
-                            },
-                        }
-                    )
+                    const res = await fetchAuthMe(token)
                     if (!res.ok) throw new Error("인증 실패")
                     const user = await res.json()
 
@@ -1222,14 +1143,7 @@ export function logoutButton(
             try {
                 // logout logic
                 // 1. (선택적으로) 서버에 로그아웃 요청
-                await fetch(
-                    "https://terene-notifier-server.onrender.com/api/auth/logout",
-                    {
-                        method: "POST",
-                        // ✅ 쿠키 안 쓰므로 제거
-                        // credentials: "include",
-                    }
-                )
+                await requestAuthLogout()
                 // 2. 로컬스토리지에서 토큰 삭제
                 localStorage.removeItem("token")
 
@@ -1351,14 +1265,7 @@ export function redirectToReservation(
                 // me-only logic
                 const token = localStorage.getItem("token")
                 if (!token) throw new Error("토큰 없음")
-                const res = await fetch(
-                    "https://terene-notifier-server.onrender.com/api/auth/me",
-                    {
-                        headers: {
-                            Authorization: `Bearer ${token}`,
-                        },
-                    }
-                )
+                const res = await fetchAuthMe(token)
                 if (!res.ok) throw new Error("인증 실패")
                 if (res.ok) {
                     // 비밀번호 변경 필요 시
@@ -1396,14 +1303,7 @@ export function redirectToMemberPage(
                 // me-only logic
                 const token = localStorage.getItem("token")
                 if (!token) throw new Error("토큰 없음")
-                const res = await fetch(
-                    "https://terene-notifier-server.onrender.com/api/auth/me",
-                    {
-                        headers: {
-                            Authorization: `Bearer ${token}`,
-                        },
-                    }
-                )
+                const res = await fetchAuthMe(token)
                 if (!res.ok) throw new Error("인증 실패")
                 if (res.ok) {
                     // 비밀번호 변경 필요 시
