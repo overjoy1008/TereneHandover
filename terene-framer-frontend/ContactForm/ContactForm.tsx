@@ -2,6 +2,7 @@ import { forwardRef, useEffect, useState, type ComponentType } from "react"
 import { createStore } from "https://framer.com/m/framer/store.js@^1.0.0"
 import * as React from "react"
 import { useStore } from "../Store/MainStore.tsx"
+import { postQueue } from "../Api/notifier.ts"
 
 export const useFormStore = createStore({
     surname: null,
@@ -328,18 +329,11 @@ export function sendNotification(
             }
 
             try {
-                const res = await fetch(
-                    "https://terene-notifier-server.onrender.com/api/queue/O",
-                    {
-                        method: "POST",
-                        headers: { "Content-Type": "application/json" },
-                        body: JSON.stringify({
-                            contact,
-                            templateParams: { name: fullName },
-                            enqueuedAt: getKSTISOString(),
-                        }),
-                    }
-                )
+                const res = await postQueue("O", {
+                    contact,
+                    templateParams: { name: fullName },
+                    enqueuedAt: getKSTISOString(),
+                })
                 if (!res.ok) throw new Error(await res.text())
 
                 window.location.href = `/contact-form-success`
