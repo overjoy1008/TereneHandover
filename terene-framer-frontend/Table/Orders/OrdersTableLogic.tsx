@@ -1,5 +1,6 @@
 
 import { useEffect, useMemo, useState } from "react"
+import { postQueue } from "../../Api/notifier.ts"
 
 function getKSTDate(baseDate = new Date()) {
     const utc = baseDate.getTime() + baseDate.getTimezoneOffset() * 60000
@@ -34,8 +35,6 @@ function generateRandomString(length: number) {
         result += chars.charAt(Math.floor(Math.random() * chars.length))
     return result
 }
-
-const QUEUE_BASE = "https://terene-notifier-server.onrender.com/api/queue"
 
 export function OrdersTableLogic() {
     const [rows, setRows] = useState<any[]>([])
@@ -471,16 +470,12 @@ export function OrdersTableLogic() {
         type: "decline" | "cancel",
         lang: string
     ) => {
-        const r = await fetch(`${QUEUE_BASE}/CD`, {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({
-                orderId,
-                actor: "admin",
-                cancelMode: type,
-                testMode: false,
-                lang,
-            }),
+        const r = await postQueue("CD", {
+            orderId,
+            actor: "admin",
+            cancelMode: type,
+            testMode: false,
+            lang,
         })
         if (!r.ok) return alert(await r.text())
         alert("취소 요청이 접수되었습니다.")
@@ -491,16 +486,12 @@ export function OrdersTableLogic() {
         type: "decline" | "cancel",
         lang: string
     ) => {
-        const r = await fetch(`${QUEUE_BASE}/CD`, {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({
-                orderId,
-                actor: "customer",
-                cancelMode: type,
-                testMode: false,
-                lang,
-            }),
+        const r = await postQueue("CD", {
+            orderId,
+            actor: "customer",
+            cancelMode: type,
+            testMode: false,
+            lang,
         })
         if (!r.ok) return alert(await r.text())
         alert("고객 취소 요청이 접수되었습니다.")
@@ -512,10 +503,10 @@ export function OrdersTableLogic() {
         handleCancelCustomer(orderId, "cancel", lang)
 
     async function handleRefund(orderId: string, lang: string) {
-        const r = await fetch(`${QUEUE_BASE}/EF`, {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ orderId, testMode: false, lang }),
+        const r = await postQueue("EF", {
+            orderId,
+            testMode: false,
+            lang,
         })
         if (!r.ok) return alert(await r.text())
         alert("환불 처리가 접수되었습니다.")
@@ -532,17 +523,13 @@ export function OrdersTableLogic() {
         settlement_url: string,
         lang: string
     ) => {
-        const r = await fetch(`${QUEUE_BASE}/JK`, {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({
-                orderId,
-                type,
-                settlementInfo,
-                settlement_url: settlement_url ?? null,
-                testMode: false,
-                lang,
-            }),
+        const r = await postQueue("JK", {
+            orderId,
+            type,
+            settlementInfo,
+            settlement_url: settlement_url ?? null,
+            testMode: false,
+            lang,
         })
         if (!r.ok) return alert(await r.text())
         alert("정산 처리가 접수되었습니다.")
@@ -557,14 +544,10 @@ export function OrdersTableLogic() {
             settlement_breakdown: string
         }
     ) => {
-        const r = await fetch(`${QUEUE_BASE}/L`, {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({
-                orderId,
-                type,
-                settlementInfo: settlementInfo ?? null,
-            }),
+        const r = await postQueue("L", {
+            orderId,
+            type,
+            settlementInfo: settlementInfo ?? null,
         })
         if (!r.ok) return alert(await r.text())
         alert("완료 처리가 접수되었습니다.")
