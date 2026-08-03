@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import type { ComponentType } from "react"
 import { LoadingOverlay } from "../Components/LoadingOverlay.tsx"
+import { postQueue } from "../Api/notifier.ts"
 
 export const successPage = (
     Component: ComponentType<any>
@@ -123,14 +124,7 @@ export const successPage = (
                         enqueuedAt: getKSTISOString(),
                     }
 
-                    const qRes = await fetch(
-                        "https://terene-notifier-server.onrender.com/api/queue/A",
-                        {
-                            method: "POST",
-                            headers: { "Content-Type": "application/json" },
-                            body: JSON.stringify(jobPayload),
-                        }
-                    )
+                    const qRes = await postQueue("A", jobPayload)
                     if (!qRes.ok) {
                         const t = await qRes.text()
                         throw new Error(`큐 등록 실패: ${qRes.status} - ${t}`)
