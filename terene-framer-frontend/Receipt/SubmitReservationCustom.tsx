@@ -24,6 +24,7 @@ import { type ComponentType } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import AgreementPopup from "./AgreementPopup.tsx"
 import { fetchAdminBypassCode } from "../Utils/FetchUtils.tsx"
+import { postQueue } from "../Api/notifier.ts"
 
 function getKSTDate(baseDate = new Date()) {
     const utc = baseDate.getTime() + baseDate.getTimezoneOffset() * 60000
@@ -247,30 +248,23 @@ export function submitReservationAdmin(
                 // console.log("payload: ", JSON.stringify(payload))
 
                 // 서버 큐에 작업 맡겨두기: queue/N
-                const res = await fetch(
-                    "https://terene-notifier-server.onrender.com/api/queue/N",
-                    {
-                        method: "POST",
-                        headers: { "Content-Type": "application/json" },
-                        body: JSON.stringify({
-                            kind: "N",
-                            orderPayload: payload,
-                            templateParams: {
-                                stay_location: payload.stay_location,
-                                reserver_name: payload.reserver_name,
-                                order_id: payload.order_id,
-                                membership_number:
-                                    payload.membership_number || "비회원 예약",
-                                reserver_contact: String(
-                                    payload.reserver_contact || ""
-                                ),
-                                checkin_date: payload.checkin_date,
-                                checkout_date: payload.checkout_date,
-                            },
-                            enqueuedAt: getKSTISOString(),
-                        }),
-                    }
-                )
+                const res = await postQueue("N", {
+                    kind: "N",
+                    orderPayload: payload,
+                    templateParams: {
+                        stay_location: payload.stay_location,
+                        reserver_name: payload.reserver_name,
+                        order_id: payload.order_id,
+                        membership_number:
+                            payload.membership_number || "비회원 예약",
+                        reserver_contact: String(
+                            payload.reserver_contact || ""
+                        ),
+                        checkin_date: payload.checkin_date,
+                        checkout_date: payload.checkout_date,
+                    },
+                    enqueuedAt: getKSTISOString(),
+                })
 
                 if (!res.ok) throw new Error(await res.text())
 
