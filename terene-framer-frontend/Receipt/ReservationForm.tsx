@@ -173,11 +173,8 @@ export function toggleNationality(
         return (
             <Component
                 {...props}
-                disabled={shouldAutofill}
-                selectedValue={
-                    shouldAutofill ? mainStore.nationality : props.selectedValue
-                }
-                onChange={shouldAutofill ? undefined : handleChange}
+                selectedValue={formStore.nationality ?? props.selectedValue}
+                onChange={handleChange}
                 mode={shouldAutofill ? "autofill" : "default"}
             />
         )
@@ -209,8 +206,8 @@ export function toggleReserverNumber(
         return (
             <Component
                 {...props}
-                onChange={shouldAutofill ? undefined : handleChange}
-                value={shouldAutofill ? mainStore.membership_number : undefined}
+                onChange={handleChange}
+                value={formStore.reserver_number ?? undefined}
                 mode={shouldAutofill ? "autofill" : "default"}
             />
         )
@@ -243,8 +240,8 @@ export function toggleReserverName(
         return (
             <Component
                 {...props}
-                onChange={shouldAutofill ? undefined : handleChange}
-                value={shouldAutofill ? mainStore.name : undefined}
+                onChange={handleChange}
+                value={formStore.reserver_name ?? undefined}
                 mode={shouldAutofill ? "autofill" : "default"}
             />
         )
@@ -280,8 +277,8 @@ export function toggleReserverBirthdate(
         return (
             <Component
                 {...props}
-                onChange={shouldAutofill ? undefined : handleChange}
-                value={shouldAutofill ? mainStore.birthdate : undefined}
+                onChange={handleChange}
+                value={formStore.reserver_birthdate ?? undefined}
                 mode={shouldAutofill ? "autofill" : "default"}
             />
         )
@@ -317,8 +314,8 @@ export function toggleReserverPhone(
         return (
             <Component
                 {...props}
-                onChange={shouldAutofill ? undefined : handleChange}
-                value={shouldAutofill ? mainStore.phone : undefined}
+                onChange={handleChange}
+                value={formStore.reserver_phone ?? undefined}
                 mode={shouldAutofill ? "autofill" : "default"}
             />
         )
@@ -354,8 +351,8 @@ export function toggleReserverEmail(
         return (
             <Component
                 {...props}
-                onChange={shouldAutofill ? undefined : handleChange}
-                value={shouldAutofill ? mainStore.email : undefined}
+                onChange={handleChange}
+                value={formStore.reserver_email ?? undefined}
                 mode={shouldAutofill ? "autofill" : "default"}
             />
         )
@@ -402,8 +399,8 @@ export function toggleReserverNameNonmember(
         return (
             <Component
                 {...props}
-                onChange={shouldAutofill ? undefined : handleChange}
-                value={shouldAutofill ? mainStore.name : undefined}
+                onChange={handleChange}
+                value={formStore.reserver_name ?? undefined}
                 mode={shouldAutofill ? "autofill" : "default"}
             />
         )
@@ -435,8 +432,8 @@ export function toggleReserverBirthdateNonmember(
         return (
             <Component
                 {...props}
-                onChange={shouldAutofill ? undefined : handleChange}
-                value={shouldAutofill ? mainStore.birthdate : undefined}
+                onChange={handleChange}
+                value={formStore.reserver_birthdate ?? undefined}
                 mode={shouldAutofill ? "autofill" : "default"}
             />
         )
@@ -468,8 +465,8 @@ export function toggleReserverPhoneNonmember(
         return (
             <Component
                 {...props}
-                onChange={shouldAutofill ? undefined : handleChange}
-                value={shouldAutofill ? mainStore.phone : undefined}
+                onChange={handleChange}
+                value={formStore.reserver_phone ?? undefined}
                 mode={shouldAutofill ? "autofill" : "default"}
             />
         )
@@ -501,8 +498,8 @@ export function toggleReserverEmailNonmember(
         return (
             <Component
                 {...props}
-                onChange={shouldAutofill ? undefined : handleChange}
-                value={shouldAutofill ? mainStore.email : undefined}
+                onChange={handleChange}
+                value={formStore.reserver_email ?? undefined}
                 mode={shouldAutofill ? "autofill" : "default"}
             />
         )
@@ -544,8 +541,8 @@ export function toggleStayName(
         return (
             <Component
                 {...props}
-                onChange={shouldAutofill ? undefined : handleChange}
-                value={shouldAutofill ? autofillValue : undefined}
+                onChange={handleChange}
+                value={formStore.stay_name ?? undefined}
                 mode={shouldAutofill ? "autofill" : "default"}
             />
         )
@@ -575,8 +572,8 @@ export function toggleStayBirthdate(
         return (
             <Component
                 {...props}
-                onChange={shouldAutofill ? undefined : handleChange}
-                value={shouldAutofill ? autofillValue : undefined}
+                onChange={handleChange}
+                value={formStore.stay_birthdate ?? undefined}
                 mode={shouldAutofill ? "autofill" : "default"}
             />
         )
@@ -606,8 +603,8 @@ export function toggleStayPhone(
         return (
             <Component
                 {...props}
-                onChange={shouldAutofill ? undefined : handleChange}
-                value={shouldAutofill ? autofillValue : undefined}
+                onChange={handleChange}
+                value={formStore.stay_phone ?? undefined}
                 mode={shouldAutofill ? "autofill" : "default"}
             />
         )
