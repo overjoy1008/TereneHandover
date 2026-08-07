@@ -113,7 +113,7 @@ export async function postQueue(
     job: string,
     body: unknown
 ): Promise<Response> {
-    return request("notifier", queueUrl(job), {
+    return request("gateway", queueUrl(job), {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(body),
