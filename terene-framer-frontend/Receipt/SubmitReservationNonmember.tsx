@@ -325,10 +325,10 @@ export function submitReservation(
                         : reserver_email,
 
                     stay_info: {
-                        same_as_reserver: true,
-                        name: reserver_name,
-                        birthdate: reserver_birthdate,
-                        contact: reserver_phone,
+                        same_as_reserver: formStore.isSameReserverStay,
+                        name: stay_name || reserver_name,
+                        birthdate: stay_birthdate || reserver_birthdate,
+                        contact: stay_phone || reserver_phone,
                     },
 
                     stay_people: {
