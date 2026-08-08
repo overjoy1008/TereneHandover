@@ -76,7 +76,12 @@ export function useTableLogic(
             custom: false,
         })
 
-        fetch(apiBase)
+        const listPromise =
+            variant === "coupons"
+                ? request("db", "/api/v2/coupon-definitions")
+                : fetch(apiBase)
+
+        listPromise
             .then((res) => res.json())
             .then((data) => setRows(data))
             .catch((err) => console.error("Fetch error:", err))
