@@ -113,8 +113,50 @@ export async function insertOrUpdate(type, rawData, idField) {
     await db.query(query, values)
 }
 
+const COUPON_DELETE_ENTITY_TYPE = {
+    coupon_definitions: "definition",
+    coupon_instances: "instance",
+}
+
 export async function deleteById(type, idField, idValue) {
     const table = TABLE_MAP[type]
     if (!table) throw new Error("Invalid entity type")
-    await db.query(`DELETE FROM ${table} WHERE ${idField} = $1`, [idValue])
+
+    const entityType = COUPON_DELETE_ENTITY_TYPE[type]
+    if (!entityType) {
+        await db.query(`DELETE FROM ${table} WHERE ${idField} = $1`, [idValue])
+        return
+    }
+
+    const client = await db.connect()
+    try {
+        await client.query("BEGIN")
+
+        const selected = await client.query(
+            `SELECT * FROM ${table} WHERE ${idField} = $1`,
+            [idValue]
+        )
+        const row = selected.rows[0]
+        if (row) {
+            await client.query(
+                `INSERT INTO coupon_deletion_history_250618
+                    (entity_type, entity_id, deleted_by, source, snapshot)
+                 VALUES ($1, $2, $3, $4, $5::jsonb)`,
+                [entityType, String(idValue), null, null, JSON.stringify(row)]
+            )
+        }
+
+        await client.query(`DELETE FROM ${table} WHERE ${idField} = $1`, [
+            idValue,
+        ])
+
+        await client.query("COMMIT")
+    } catch (err) {
+        try {
+            await client.query("ROLLBACK")
+        } catch {}
+        throw err
+    } finally {
+        client.release()
+    }
 }
