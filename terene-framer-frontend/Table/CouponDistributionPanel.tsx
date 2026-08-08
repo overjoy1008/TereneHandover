@@ -1,5 +1,6 @@
 
 import React from "react"
+import { request } from "../Api/client.ts"
 import { MenuToggle } from "./MenuToggle.tsx"
 import { CouponLogPopup } from "./CouponLogPopup.tsx"
 import { CouponInstancesPopup } from "./CouponInstancesPopup.tsx"
@@ -297,21 +298,19 @@ export function CouponDistributionPanel({
         }
 
         const postInstance = async (payload: any) => {
-            const res = await fetch(
-                "https://terene-db-server.onrender.com/api/v2/coupon-instances",
-                {
-                    method: "POST",
-                    headers: { "Content-Type": "application/json" },
-                    body: JSON.stringify(payload),
-                }
-            )
+            const res = await request("db", "/api/v2/coupon-instances", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(payload),
+            })
             if (!res.ok) throw new Error("쿠폰 발급 실패")
             return res.json()
         }
 
         // ✅ 기존 인스턴스 조회
-        const existingInstances = await fetch(
-            `https://terene-db-server.onrender.com/api/v2/coupon-instances?coupon_definition_id=${coupon.coupon_definition_id}`
+        const existingInstances = await request(
+            "db",
+            `/api/v2/coupon-instances?coupon_definition_id=${coupon.coupon_definition_id}`
         ).then((res) => res.json())
 
         const codeResults: { member: string; code: string }[] = []

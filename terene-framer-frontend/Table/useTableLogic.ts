@@ -568,8 +568,9 @@ export function useTableLogic(
 
                             for (const { defId, count } of pkgToIssue) {
                                 for (let i = 0; i < count; i++) {
-                                    const res = await fetch(
-                                        "https://terene-db-server.onrender.com/api/v2/coupon-instances",
+                                    const res = await request(
+                                        "db",
+                                        "/api/v2/coupon-instances",
                                         {
                                             method: "POST",
                                             headers: {

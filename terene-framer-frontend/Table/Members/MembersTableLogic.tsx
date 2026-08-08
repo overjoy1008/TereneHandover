@@ -380,7 +380,7 @@ export function MembersTableLogic() {
         try {
             for (const { defId, count } of pkgToIssue) {
                 for (let i = 0; i < count; i++) {
-                    const res = await fetch(CI_BASE, {
+                    const res = await request("db", "/api/v2/coupon-instances", {
                         method: "POST",
                         headers: { "Content-Type": "application/json" },
                         body: JSON.stringify(createCouponPayload(defId)),

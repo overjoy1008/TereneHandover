@@ -1,6 +1,7 @@
 
 // === New file: CouponTargetsPopup.tsx ===
 import React from "react"
+import { request } from "../Api/client.ts"
 
 export type TargetRow = {
     membership_number: string | null
@@ -168,8 +169,9 @@ export function CouponTargetsPopup({
                     .trim()
 
             // existing instances (for duplicate checks)
-            const existingInstances: any[] = await fetch(
-                `https://terene-db-server.onrender.com/api/v2/coupon-instances?coupon_definition_id=${coupon.coupon_definition_id}`
+            const existingInstances: any[] = await request(
+                "db",
+                `/api/v2/coupon-instances?coupon_definition_id=${coupon.coupon_definition_id}`
             ).then((r) => r.json())
 
             // 이미 존재하는(충돌 방지용) 코드 목록 수집
@@ -217,14 +219,11 @@ export function CouponTargetsPopup({
             }
 
             const postInstance = async (payload: any) => {
-                const res = await fetch(
-                    "https://terene-db-server.onrender.com/api/v2/coupon-instances",
-                    {
-                        method: "POST",
-                        headers: { "Content-Type": "application/json" },
-                        body: JSON.stringify(payload),
-                    }
-                )
+                const res = await request("db", "/api/v2/coupon-instances", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify(payload),
+                })
                 if (!res.ok) throw new Error("쿠폰 발급 실패")
                 return res.json()
             }
