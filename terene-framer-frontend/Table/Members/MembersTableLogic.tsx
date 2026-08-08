@@ -1,5 +1,6 @@
 // MembersTableLogic.tsx
 import { useEffect, useMemo, useState } from "react"
+import { request } from "../../Api/client.ts"
 
 const API_BASE = "https://terene-db-server.onrender.com/api/v2/customers"
 const CI_BASE = "https://terene-db-server.onrender.com/api/v2/coupon-instances"
@@ -282,7 +283,7 @@ export function MembersTableLogic() {
         const allowedDefIds = new Set(activePackage.map(({ defId }) => defId))
 
         try {
-            const listRes = await fetch(CI_BASE)
+            const listRes = await request("db", "/api/v2/coupon-instances")
             if (!listRes.ok) {
                 const text = await listRes.text()
                 throw new Error(
@@ -308,8 +309,9 @@ export function MembersTableLogic() {
             })
 
             for (const ci of toDelete) {
-                const delRes = await fetch(
-                    `${CI_BASE}/${ci.coupon_instance_id}`,
+                const delRes = await request(
+                    "db",
+                    `/api/v2/coupon-instances/${ci.coupon_instance_id}`,
                     { method: "DELETE" }
                 )
                 if (!delRes.ok) {
@@ -563,7 +565,7 @@ export function MembersTableLogic() {
     ) => {
         // 1) 쿠폰 인스턴스 삭제 (membership_number 같은 것만!)
         try {
-            const listRes = await fetch(CI_BASE)
+            const listRes = await request("db", "/api/v2/coupon-instances")
             if (!listRes.ok) {
                 const text = await listRes.text().catch(() => "")
                 throw new Error(
@@ -583,8 +585,9 @@ export function MembersTableLogic() {
 
                 // ⚠️ 반드시 membership_number 같은 것만 삭제해야 하므로
                 // 프론트에서 1차로 필터링하고, 서버에서도 membership_number 검증이 되도록 유지하는 전제
-                const delRes = await fetch(
-                    `${CI_BASE}/${encodeURIComponent(id)}`,
+                const delRes = await request(
+                    "db",
+                    `/api/v2/coupon-instances/${encodeURIComponent(id)}`,
                     {
                         method: "DELETE",
                     }

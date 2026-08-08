@@ -2,6 +2,7 @@
 import * as React from "react"
 import { addPropertyControls, ControlType } from "framer"
 import { CouponCard } from "./CouponCard.tsx"
+import { request } from "../Api/client.ts"
 
 function getKSTDate(baseDate = new Date()) {
     const utc = baseDate.getTime() + baseDate.getTimezoneOffset() * 60000
@@ -89,7 +90,7 @@ export function CouponContainer({
     }
 
     React.useEffect(() => {
-        fetch("https://terene-db-server.onrender.com/api/v2/coupon-definitions")
+        request("db", "/api/v2/coupon-definitions")
             .then((res) => res.json())
             .then((data) => {
                 // ✅ 처음 로딩될 때만 정렬
@@ -292,8 +293,9 @@ export function CouponContainer({
 
         // 서버에서 삭제 요청
         try {
-            await fetch(
-                `https://terene-db-server.onrender.com/api/v2/coupon-definitions/${coupon_definition_id}`,
+            await request(
+                "db",
+                `/api/v2/coupon-definitions/${coupon_definition_id}`,
                 {
                     method: "DELETE",
                 }

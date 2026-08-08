@@ -1,5 +1,6 @@
 
 import React from "react"
+import { request } from "../Api/client.ts"
 
 type CouponInstance = {
     coupon_instance_id: string
@@ -60,17 +61,16 @@ export function CouponInstancesPopup({
             setError(null)
             try {
                 // 1차: 정의된 쿼리 파라미터 시도
-                let res = await fetch(
-                    `https://terene-db-server.onrender.com/api/v2/coupon-instances?coupon_definition_id=${encodeURIComponent(
+                let res = await request(
+                    "db",
+                    `/api/v2/coupon-instances?coupon_definition_id=${encodeURIComponent(
                         couponDefinitionId
                     )}`
                 )
 
                 // 혹시 서버가 쿼리를 지원 안 하면 전체 받아서 필터
                 if (!res.ok) {
-                    res = await fetch(
-                        "https://terene-db-server.onrender.com/api/v2/coupon-instances"
-                    )
+                    res = await request("db", "/api/v2/coupon-instances")
                 }
                 if (!res.ok) throw new Error("쿠폰 인스턴스 조회 실패")
 
@@ -122,8 +122,9 @@ export function CouponInstancesPopup({
         if (!confirm("정말 이 쿠폰을 삭제하시겠습니까?")) return
         setDeletingIds((prev) => [...prev, id])
         try {
-            const res = await fetch(
-                `https://terene-db-server.onrender.com/api/v2/coupon-instances/${id}`,
+            const res = await request(
+                "db",
+                `/api/v2/coupon-instances/${id}`,
                 { method: "DELETE" }
             )
             if (!res.ok) throw new Error("삭제 실패")
@@ -142,8 +143,9 @@ export function CouponInstancesPopup({
         setBulkDeleting(true)
         try {
             for (const it of items) {
-                await fetch(
-                    `https://terene-db-server.onrender.com/api/v2/coupon-instances/${it.coupon_instance_id}`,
+                await request(
+                    "db",
+                    `/api/v2/coupon-instances/${it.coupon_instance_id}`,
                     { method: "DELETE" }
                 )
             }

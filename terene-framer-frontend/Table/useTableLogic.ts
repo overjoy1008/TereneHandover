@@ -6,6 +6,7 @@ import { formatDate, parseDate } from "../Utils/DateUtils.tsx"
 import { createReservationMessage } from "../Notifier/messages.ts"
 import { sendSMS, sendEmail } from "../Notifier/notify.ts"
 import { ADMIN_PHONES, ADMIN_EMAILS } from "../Notifier/adminContacts.ts"
+import { request } from "../Api/client.ts"
 
 function getKSTDate(baseDate = new Date()) {
     const utc = baseDate.getTime() + baseDate.getTimezoneOffset() * 60000
@@ -449,9 +450,10 @@ export function useTableLogic(
 
                     if (row.membership_number) {
                         try {
-                            const ciBase =
-                                "https://terene-db-server.onrender.com/api/v2/coupon-instances"
-                            const listRes = await fetch(ciBase)
+                            const listRes = await request(
+                                "db",
+                                "/api/v2/coupon-instances"
+                            )
                             if (!listRes.ok) {
                                 const text = await listRes.text()
                                 throw new Error(
@@ -472,8 +474,9 @@ export function useTableLogic(
                             )
 
                             for (const ci of toDelete) {
-                                const delRes = await fetch(
-                                    `${ciBase}/${ci.coupon_instance_id}`,
+                                const delRes = await request(
+                                    "db",
+                                    `/api/v2/coupon-instances/${ci.coupon_instance_id}`,
                                     {
                                         method: "DELETE",
                                     }
