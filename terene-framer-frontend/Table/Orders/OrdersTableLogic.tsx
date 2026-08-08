@@ -525,13 +525,20 @@ export function OrdersTableLogic() {
         type: "decline" | "cancel",
         lang: string
     ) => {
-        const r = await postQueue("CD", {
-            orderId,
-            actor: "admin",
-            cancelMode: type,
-            testMode: false,
-            lang,
-        })
+        const r = await request(
+            "gateway",
+            `/api/admin/reservations/${encodeURIComponent(orderId)}/cancel`,
+            {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({
+                    cancelMode: type,
+                    testMode: false,
+                    lang,
+                }),
+                auth: true,
+            }
+        )
         if (!r.ok) return alert(await r.text())
         alert("취소 요청이 접수되었습니다.")
     }

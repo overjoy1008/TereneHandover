@@ -45,7 +45,7 @@ export async function getOrder(orderId: string): Promise<Response> {
 }
 
 export async function createOrder(body: unknown): Promise<Response> {
-    return request("db", "/api/v2/orders", {
+    return request("gateway", "/api/v2/orders", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(body),

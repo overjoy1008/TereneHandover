@@ -3,6 +3,7 @@ import type { ComponentType } from "react"
 import { ADMIN_PHONES, ADMIN_EMAILS } from "../Notifier/adminContacts.ts"
 import { LoadingOverlay } from "../Components/LoadingOverlay.tsx"
 import { postQueue } from "../Api/notifier.ts"
+import { request } from "../Api/client.ts"
 
 export const loadingPage = (
     Component: ComponentType<any>
@@ -66,8 +67,9 @@ export const loadingPage = (
                         logKST("무료 결제: 결제 확인 생략")
                     }
 
-                    const orderRes = await fetch(
-                        `https://terene-db-server.onrender.com/api/v2/orders/${orderId}`
+                    const orderRes = await request(
+                        "gateway",
+                        `/api/v2/orders/${orderId}`
                     )
                     if (!orderRes.ok) {
                         const t = await orderRes.text()
