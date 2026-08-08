@@ -181,21 +181,13 @@ export function OrdersTableLogic() {
         try {
             const [orders, payments, cancellations, refunds, settlements] =
                 await Promise.all([
-                    fetch(
-                        "https://terene-db-server.onrender.com/api/v2/orders"
-                    ).then((r) => r.json()),
-                    fetch(
-                        "https://terene-db-server.onrender.com/api/v2/payments"
-                    ).then((r) => r.json()),
-                    fetch(
-                        "https://terene-db-server.onrender.com/api/v2/cancellations"
-                    ).then((r) => r.json()),
-                    fetch(
-                        "https://terene-db-server.onrender.com/api/v2/refunds"
-                    ).then((r) => r.json()),
-                    fetch(
-                        "https://terene-db-server.onrender.com/api/v2/settlements"
-                    ).then((r) => r.json()),
+                    request("db", "/api/v2/orders").then((r) => r.json()),
+                    request("db", "/api/v2/payments").then((r) => r.json()),
+                    request("db", "/api/v2/cancellations").then((r) =>
+                        r.json()
+                    ),
+                    request("db", "/api/v2/refunds").then((r) => r.json()),
+                    request("db", "/api/v2/settlements").then((r) => r.json()),
                 ])
 
             const byOrderId = (arr: any[], key: string) =>
@@ -441,8 +433,22 @@ export function OrdersTableLogic() {
 
     const updateOrder = async (orderId: string, status: string) => {
         const now = getKSTISOString()
-        const order = rows.find((o) => o.order_id === orderId)
-        if (!order) return
+        let order = rows.find((o) => o.order_id === orderId)
+        if (!order) {
+            const fetched = await request(
+                "db",
+                `/api/v2/orders/${encodeURIComponent(orderId)}`
+            )
+            if (!fetched.ok) {
+                throw new Error(
+                    `Order ${orderId} not found (${fetched.status})`
+                )
+            }
+            order = await fetched.json()
+            if (!order || order.order_id == null) {
+                throw new Error(`Order ${orderId} not found`)
+            }
+        }
 
         const existingHistory = Array.isArray(order.reservation_history)
             ? order.reservation_history
