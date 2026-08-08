@@ -46,8 +46,10 @@ const PROD_ORIGINS: ApiOrigins = {
     gateway: "https://terene-gateway.onrender.com",
 }
 
-/** Mirrors PROD until dedicated DEV hosts are defined. */
-const DEV_ORIGINS: ApiOrigins = { ...PROD_ORIGINS }
+const DEV_ORIGINS: ApiOrigins = {
+    ...PROD_ORIGINS,
+    db: "https://terene-db-server-dev.onrender.com",
+}
 
 /**
  * Local placeholders — adjust ports to match your local stack.

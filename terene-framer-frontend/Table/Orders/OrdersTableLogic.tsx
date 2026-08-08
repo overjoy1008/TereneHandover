@@ -1,6 +1,7 @@
 
 import { useEffect, useMemo, useState } from "react"
 import { postQueue } from "../../Api/notifier.ts"
+import { request } from "../../Api/client.ts"
 
 function getKSTDate(baseDate = new Date()) {
     const utc = baseDate.getTime() + baseDate.getTimezoneOffset() * 60000
@@ -442,26 +443,74 @@ export function OrdersTableLogic() {
         const now = getKSTISOString()
         const order = rows.find((o) => o.order_id === orderId)
         if (!order) return
-        const newHistory = [
-            ...(order.reservation_history || []),
-            { status, timestamp: now },
-        ]
-        const updatedOrder = {
-            ...order,
-            reservation_status: status,
-            reservation_history: newHistory,
+
+        const existingHistory = Array.isArray(order.reservation_history)
+            ? order.reservation_history
+            : []
+        let reservation_history
+        if (status === "confirmed") {
+            const hasConfirmed = existingHistory.some(
+                (e: any) => e?.status === "confirmed"
+            )
+            reservation_history = hasConfirmed
+                ? existingHistory.map((e: any) =>
+                      e?.status === "confirmed"
+                          ? { ...e, status: "confirmed", timestamp: now }
+                          : e
+                  )
+                : [...existingHistory, { status: "confirmed", timestamp: now }]
+        } else {
+            reservation_history = [
+                ...existingHistory,
+                { status, timestamp: now },
+            ]
         }
-        const res = await fetch(
-            `https://terene-db-server.onrender.com/api/v2/orders/${orderId}`,
+
+        const payload = {
+            order_id: orderId,
+            old_order_id: order.old_order_id,
+            membership_number: order.membership_number,
+            reserver_name: order.reserver_name,
+            reserver_birthdate: order.reserver_birthdate,
+            reserver_contact: order.reserver_contact,
+            reserver_email: order.reserver_email,
+            stay_info: order.stay_info,
+            stay_people: order.stay_people,
+            stay_location: order.stay_location,
+            checkin_date: order.checkin_date,
+            checkout_date: order.checkout_date,
+            stay_details: order.stay_details,
+            initial_price: order.initial_price,
+            discounted_price: order.discounted_price,
+            service_price: order.service_price,
+            exchange_margin_price: order.exchange_margin_price,
+            vat_price: order.vat_price,
+            deposit_price: order.deposit_price,
+            final_price: order.final_price,
+            stay_status: order.stay_status,
+            stay_history: order.stay_history,
+            reservation_status: status,
+            reservation_history,
+            reserved_by_vaadd: order.reserved_by_vaadd,
+            hidden: order.hidden,
+            payment: order.payment,
+            nationality: order.nationality,
+        }
+
+        const res = await request(
+            "db",
+            `/api/v2/orders/${encodeURIComponent(orderId)}`,
             {
                 method: "PUT",
                 headers: { "Content-Type": "application/json" },
-                body: JSON.stringify(updatedOrder),
+                body: JSON.stringify(payload),
             }
         )
         if (res.ok)
             setRows((prev) =>
-                prev.map((o) => (o.order_id === orderId ? updatedOrder : o))
+                prev.map((o) =>
+                    o.order_id === orderId ? { ...o, ...payload } : o
+                )
             )
     }
 

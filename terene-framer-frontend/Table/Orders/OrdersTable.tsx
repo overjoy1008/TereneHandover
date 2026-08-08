@@ -189,7 +189,7 @@ export function OrdersTableComponent() {
                     order={detailOrder}
                     onClose={() => setDetailOrder(null)}
                     onAccept={() =>
-                        updateOrder(detailOrder.order_id, "accepted")
+                        updateOrder(detailOrder.order_id, "confirmed")
                     }
                     onDecline={() =>
                         handleCancel(
