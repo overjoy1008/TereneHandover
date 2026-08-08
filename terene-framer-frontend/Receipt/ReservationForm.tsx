@@ -529,13 +529,16 @@ export function toggleStayName(
         const autofillValue = formStore.reserver_name ?? ""
 
         React.useEffect(() => {
-            if (shouldAutofill && formStore.stay_name !== autofillValue) {
+            if (shouldAutofill && !formStore.stay_name) {
                 setFormStore({ stay_name: autofillValue })
             }
         }, [shouldAutofill, autofillValue])
 
         const handleChange = (event) => {
-            setFormStore({ stay_name: event.target.value })
+            setFormStore({
+                stay_name: event.target.value,
+                isSameReserverStay: false,
+            })
         }
 
         return (
@@ -560,13 +563,16 @@ export function toggleStayBirthdate(
         const autofillValue = formStore.reserver_birthdate ?? ""
 
         React.useEffect(() => {
-            if (shouldAutofill && formStore.stay_birthdate !== autofillValue) {
+            if (shouldAutofill && !formStore.stay_birthdate) {
                 setFormStore({ stay_birthdate: autofillValue })
             }
         }, [shouldAutofill, autofillValue])
 
         const handleChange = (event) => {
-            setFormStore({ stay_birthdate: event.target.value })
+            setFormStore({
+                stay_birthdate: event.target.value,
+                isSameReserverStay: false,
+            })
         }
 
         return (
@@ -591,13 +597,16 @@ export function toggleStayPhone(
         const autofillValue = formStore.reserver_phone ?? ""
 
         React.useEffect(() => {
-            if (shouldAutofill && formStore.stay_phone !== autofillValue) {
+            if (shouldAutofill && !formStore.stay_phone) {
                 setFormStore({ stay_phone: autofillValue })
             }
         }, [shouldAutofill, autofillValue])
 
         const handleChange = (event) => {
-            setFormStore({ stay_phone: event.target.value })
+            setFormStore({
+                stay_phone: event.target.value,
+                isSameReserverStay: false,
+            })
         }
 
         return (

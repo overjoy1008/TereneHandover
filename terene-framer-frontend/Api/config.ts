@@ -49,6 +49,8 @@ const PROD_ORIGINS: ApiOrigins = {
 const DEV_ORIGINS: ApiOrigins = {
     ...PROD_ORIGINS,
     db: "https://terene-db-server-dev.onrender.com",
+    notifier: "https://terene-notifier-server-dev.onrender.com",
+    gateway: "https://terene-gateway-dev.onrender.com",
 }
 
 /**
