@@ -3,6 +3,7 @@
 import * as React from "react"
 import { useStore } from "../Store/MainStore.tsx"
 import { useHolidayCategoryMap, toCategoryMap } from "./PriceDisplay.tsx"
+import { getReservationSettings } from "../Api/reservations.ts"
 
 function parseDateParam(param: string): Date {
     const [year, month, day] = param.split("-").map(Number)
@@ -102,7 +103,7 @@ export default function MembershipCouponSelector() {
     }, [store.membership_number, store.membership])
 
     React.useEffect(() => {
-        fetch("https://terene-db-server.onrender.com/api/v3/settings")
+        getReservationSettings()
             .then((res) => res.json())
             .then((data) => {
                 const excess = data.find(

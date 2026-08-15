@@ -10,6 +10,7 @@ import {
 import { createReservationMessage } from "../Notifier/messages.ts"
 import { sendSMS, sendEmail } from "../Notifier/notify.ts"
 import { ADMIN_PHONES, ADMIN_EMAILS } from "../Notifier/adminContacts.ts"
+import { getOrders } from "../Api/reservations.ts"
 
 function getKSTDate(baseDate = new Date()) {
     const utc = baseDate.getTime() + baseDate.getTimezoneOffset() * 60000
@@ -137,9 +138,7 @@ export function nonmemberRequest(
             }
 
             try {
-                const response = await fetch(
-                    `https://terene-db-server.onrender.com/api/v2/orders`
-                )
+                const response = await getOrders()
                 if (!response.ok) throw new Error("데이터 조회 실패")
 
                 const orders = await response.json()

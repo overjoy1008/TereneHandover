@@ -8,6 +8,7 @@ import { addPropertyControls, ControlType } from "framer"
 import { getKSTDate } from "../Utils/KST.tsx"
 import { dateToTime, isSameDate } from "../Utils/DateUtils.tsx"
 import { useDayCategoryDefinitions } from "../Receipt/useDayCategoryDefinitions.ts"
+import { getOrder, getCustomer } from "../Api/reservations.ts"
 
 type Mode = "customer" | "admin"
 
@@ -96,17 +97,13 @@ export function WeekSelector(props: WeekSelectorProps) {
         Promise.all(
             missing.map(async (orderId) => {
                 try {
-                    const orderRes = await fetch(
-                        `https://terene-db-server.onrender.com/api/v2/orders/${orderId}`
-                    )
+                    const orderRes = await getOrder(orderId)
                     const order = await orderRes.json()
 
                     const membershipNumber = order?.membership_number
                     if (!membershipNumber) return [orderId, false] as const
 
-                    const customerRes = await fetch(
-                        `https://terene-db-server.onrender.com/api/v2/customers/${membershipNumber}`
-                    )
+                    const customerRes = await getCustomer(membershipNumber)
                     const customer = await customerRes.json()
 
                     const isAllFree = customer?.membership_grade === "All-Free"

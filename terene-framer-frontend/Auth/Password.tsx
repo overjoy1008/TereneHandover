@@ -10,6 +10,12 @@ import {
 import { createReservationMessage } from "../Notifier/messages.ts"
 import { sendSMS, sendEmail } from "../Notifier/notify.ts"
 import { ADMIN_PHONES, ADMIN_EMAILS } from "../Notifier/adminContacts.ts"
+import {
+    me as fetchAuthMe,
+    logout as requestAuthLogout,
+    getPasswordChangeCustomers,
+    updatePasswordChangeCustomer,
+} from "../Api/auth.ts"
 
 function getKSTDate(baseDate = new Date()) {
     const utc = baseDate.getTime() + baseDate.getTimezoneOffset() * 60000
@@ -410,14 +416,7 @@ export function fetchBeforeLogout(
                     // me-only logic
                     const token = localStorage.getItem("token")
                     if (!token) throw new Error("토큰 없음")
-                    const res = await fetch(
-                        "https://terene-notifier-server.onrender.com/api/auth/me",
-                        {
-                            headers: {
-                                Authorization: `Bearer ${token}`,
-                            },
-                        }
-                    )
+                    const res = await fetchAuthMe(token)
                     if (!res.ok) throw new Error("인증 실패")
                     const user = await res.json()
 
@@ -430,14 +429,7 @@ export function fetchBeforeLogout(
 
                     // logout logic
                     // 1. (선택적으로) 서버에 로그아웃 요청
-                    await fetch(
-                        "https://terene-notifier-server.onrender.com/api/auth/logout",
-                        {
-                            method: "POST",
-                            // ✅ 쿠키 안 쓰므로 제거
-                            // credentials: "include",
-                        }
-                    )
+                    await requestAuthLogout()
                     // 2. 로컬스토리지에서 토큰 삭제
                     localStorage.removeItem("token")
                 } catch (e) {
@@ -465,14 +457,7 @@ export function showMembershipNumber(
                     // me-only logic
                     const token = localStorage.getItem("token")
                     if (!token) throw new Error("토큰 없음")
-                    const res = await fetch(
-                        "https://terene-notifier-server.onrender.com/api/auth/me",
-                        {
-                            headers: {
-                                Authorization: `Bearer ${token}`,
-                            },
-                        }
-                    )
+                    const res = await fetchAuthMe(token)
                     if (!res.ok) throw new Error("인증 실패")
                     const user = await res.json()
 
@@ -518,23 +503,14 @@ export function changePasswordWithValidation(
                 // me-only logic
                 const token = localStorage.getItem("token")
                 if (!token) throw new Error("토큰 없음")
-                const res = await fetch(
-                    "https://terene-notifier-server.onrender.com/api/auth/me",
-                    {
-                        headers: {
-                            Authorization: `Bearer ${token}`,
-                        },
-                    }
-                )
+                const res = await fetchAuthMe(token)
                 if (!res.ok) throw new Error("인증 실패")
                 const user = await res.json()
 
                 const membershipNumber = user.membership_number
 
                 // 2. 전체 고객 리스트 가져오기
-                const customerRes = await fetch(
-                    `https://terene-db-server.onrender.com/api/v2/customers`
-                )
+                const customerRes = await getPasswordChangeCustomers()
                 if (!customerRes.ok)
                     throw new Error("고객 전체 정보 불러오기 실패")
 
@@ -578,27 +554,16 @@ export function changePasswordWithValidation(
                     remarks: updatedRemarks,
                 }
 
-                const updateRes = await fetch(
-                    `https://terene-db-server.onrender.com/api/v2/customers/${membershipNumber}`,
-                    {
-                        method: "PUT",
-                        headers: { "Content-Type": "application/json" },
-                        body: JSON.stringify(updatedCustomer),
-                    }
+                const updateRes = await updatePasswordChangeCustomer(
+                    membershipNumber,
+                    updatedCustomer
                 )
 
                 if (!updateRes.ok) throw new Error("비밀번호 업데이트 실패")
 
                 // logout logic
                 // 1. (선택적으로) 서버에 로그아웃 요청
-                await fetch(
-                    "https://terene-notifier-server.onrender.com/api/auth/logout",
-                    {
-                        method: "POST",
-                        // ✅ 쿠키 안 쓰므로 제거
-                        // credentials: "include",
-                    }
-                )
+                await requestAuthLogout()
                 // 2. 로컬스토리지에서 토큰 삭제
                 localStorage.removeItem("token")
 

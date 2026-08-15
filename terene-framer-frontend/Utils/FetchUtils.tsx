@@ -1,7 +1,7 @@
+import { getReservationSettings } from "../Api/reservations.ts"
+
 export async function fetchSettings() {
-    const res = await fetch(
-        "https://terene-db-server.onrender.com/api/v3/settings"
-    )
+    const res = await getReservationSettings()
 
     if (!res.ok) {
         throw new Error(`Failed to fetch settings: ${res.status}`)
@@ -16,9 +16,7 @@ export async function fetchSettings() {
 }
 
 export async function fetchAdminBypassCode(): Promise<string | null> {
-    const res = await fetch(
-        "https://terene-db-server.onrender.com/api/v3/settings"
-    )
+    const res = await getReservationSettings()
 
     if (!res.ok) return null
 
