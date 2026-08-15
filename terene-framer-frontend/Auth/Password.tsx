@@ -13,8 +13,7 @@ import { ADMIN_PHONES, ADMIN_EMAILS } from "../Notifier/adminContacts.ts"
 import {
     me as fetchAuthMe,
     logout as requestAuthLogout,
-    getPasswordChangeCustomers,
-    updatePasswordChangeCustomer,
+    changePassword as requestChangePassword,
 } from "../Api/auth.ts"
 
 function getKSTDate(baseDate = new Date()) {
@@ -499,72 +498,62 @@ export function changePasswordWithValidation(
 
         const handleClick = async () => {
             try {
-                // 1. 인증된 사용자 정보 가져오기
-                // me-only logic
-                const token = localStorage.getItem("token")
-                if (!token) throw new Error("토큰 없음")
-                const res = await fetchAuthMe(token)
-                if (!res.ok) throw new Error("인증 실패")
-                const user = await res.json()
+                const currentPassword = store.tempPassword
+                const newPassword = store.newPassword
+                const newPasswordAgain = store.newPasswordAgain
 
-                const membershipNumber = user.membership_number
-
-                // 2. 전체 고객 리스트 가져오기
-                const customerRes = await getPasswordChangeCustomers()
-                if (!customerRes.ok)
-                    throw new Error("고객 전체 정보 불러오기 실패")
-
-                const customerList = await customerRes.json()
-
-                const matchedCustomer = customerList.find(
-                    (c) => c.membership_number === membershipNumber
-                )
-                if (!matchedCustomer) {
-                    alert("회원 정보가 존재하지 않습니다.")
-                    return
-                }
-
-                // 3. 비밀번호 및 조건 확인
-                if (
-                    store.tempPassword !== matchedCustomer.password ||
-                    store.newPassword !== store.newPasswordAgain
-                ) {
+                if (newPassword !== newPasswordAgain) {
                     alert(
                         "입력된 임시 비밀번호가 올바르지 않거나, 새 비밀번호가 일치하지 않습니다."
                     )
                     return
                 }
 
-                if (!isValidPassword(store.newPassword)) {
+                if (!isValidPassword(newPassword)) {
                     alert(
                         "새 비밀번호는 영문 대소문자, 숫자, 특수문자 중 2가지 이상 조합으로 8~16자여야 합니다."
                     )
                     return
                 }
 
-                // 4. remarks에서 temp_password 제거
-                const updatedRemarks = (matchedCustomer.remarks || []).filter(
-                    (remark) => remark !== "temp_password"
-                )
-
-                // 5. 사용자 정보 업데이트
-                const updatedCustomer = {
-                    ...matchedCustomer,
-                    password: store.newPassword,
-                    remarks: updatedRemarks,
+                const token = localStorage.getItem("token")
+                if (!token) {
+                    alert(
+                        "세션이 만료되었거나 유효하지 않습니다. 다시 로그인해주세요."
+                    )
+                    window.location.href = "/login"
+                    return
                 }
 
-                const updateRes = await updatePasswordChangeCustomer(
-                    membershipNumber,
-                    updatedCustomer
-                )
+                const updateRes = await requestChangePassword(token, {
+                    currentPassword,
+                    newPassword,
+                    newPasswordAgain,
+                })
 
-                if (!updateRes.ok) throw new Error("비밀번호 업데이트 실패")
+                if (!updateRes.ok) {
+                    if (updateRes.status === 400) {
+                        alert("비밀번호 변경 요청이 올바르지 않습니다.")
+                        return
+                    }
+                    if (updateRes.status === 401) {
+                        alert(
+                            "입력된 임시 비밀번호가 올바르지 않거나 인증에 실패했습니다."
+                        )
+                        return
+                    }
+                    if (updateRes.status === 403) {
+                        alert(
+                            "세션이 만료되었거나 유효하지 않습니다. 다시 로그인해주세요."
+                        )
+                        window.location.href = "/login"
+                        return
+                    }
+                    alert("비밀번호 변경 중 오류가 발생했습니다.")
+                    return
+                }
 
-                // logout logic
-                // 1. (선택적으로) 서버에 로그아웃 요청
                 await requestAuthLogout()
-                // 2. 로컬스토리지에서 토큰 삭제
                 localStorage.removeItem("token")
 
                 alert("비밀번호가 성공적으로 변경되었습니다.")

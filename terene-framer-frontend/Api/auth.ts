@@ -7,8 +7,7 @@
  *   POST /api/auth/login
  *   GET  /api/auth/me
  *   POST /api/auth/logout
- *   GET  /api/v2/customers
- *   PUT  /api/v2/customers/:membershipNumber
+ *   POST /api/auth/change-password
  */
 
 import { apiUrl, request } from "./client.ts"
@@ -69,23 +68,25 @@ export async function logout(): Promise<Response> {
 }
 
 /**
- * Existing password-change lookup. Kept on the DB API to preserve behavior.
+ * Secure password change. membership_number is taken from the JWT server-side;
+ * the body must not include it. Caller supplies the current localStorage token.
  */
-export async function getPasswordChangeCustomers(): Promise<Response> {
-    return request("db", "/api/v2/customers")
-}
-
-/**
- * Existing password-change update. The complete customer payload is forwarded
- * unchanged; migrating to /api/auth/change-password is separate future work.
- */
-export async function updatePasswordChangeCustomer(
-    membershipNumber: string,
-    customer: unknown
+export async function changePassword(
+    token: string,
+    body: {
+        currentPassword: string
+        newPassword: string
+        newPasswordAgain?: string
+    }
 ): Promise<Response> {
-    return request("db", `/api/v2/customers/${membershipNumber}`, {
-        method: "PUT",
+    return request("notifier", "/api/auth/change-password", {
+        method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(customer),
+        body: JSON.stringify({
+            currentPassword: body.currentPassword,
+            newPassword: body.newPassword,
+            newPasswordAgain: body.newPasswordAgain,
+        }),
+        token,
     })
 }
