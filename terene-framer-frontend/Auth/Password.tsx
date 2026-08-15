@@ -329,16 +329,20 @@ TERENE team
 
                     try {
                         const response = await fetch(
-                            "https://terene-notifier-server.onrender.com/api/email",
+                            "https://terene-notifier-server.onrender.com/api/email/v2",
                             {
                                 method: "POST",
-                                headers: { "Content-Type": "application/json" },
+                                headers: {
+                                    "Content-Type": "application/json",
+                                },
                                 body: JSON.stringify({
-                                    platform: "gmail",
                                     receiver_email: matchedCustomer.email,
-                                    email_title: "임시 비밀번호 발급 안내",
-                                    email_message: fallbackText,
-                                    email_html: htmlTemplate,
+                                    template_type: "P",
+                                    params: {
+                                        name_kor: matchedCustomer.name_kor,
+                                        temp_password: tempPassword,
+                                    },
+                                    platform: "gmail",
                                 }),
                             }
                         )
