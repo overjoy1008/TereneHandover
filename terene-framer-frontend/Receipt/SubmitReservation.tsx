@@ -24,6 +24,7 @@ import { type ComponentType } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import AgreementPopup from "./AgreementPopup.tsx"
 import { fetchAdminBypassCode } from "../Utils/FetchUtils.tsx"
+import { createOrder, getCustomer } from "../Api/reservations.ts"
 
 function getKSTDate(baseDate = new Date()) {
     const utc = baseDate.getTime() + baseDate.getTimezoneOffset() * 60000
@@ -434,14 +435,7 @@ export function submitReservation(
 
                 console.log("payload: ", JSON.stringify(payload))
 
-                const res = await fetch(
-                    "https://terene-db-server.onrender.com/api/v2/orders",
-                    {
-                        method: "POST",
-                        headers: { "Content-Type": "application/json" },
-                        body: JSON.stringify(payload),
-                    }
-                )
+                const res = await createOrder(payload)
 
                 if (!res.ok) throw new Error(await res.text())
 
@@ -475,9 +469,6 @@ export function submitReservation(
             }
         }
 
-        const CUSTOMER_API_BASE =
-            "https://terene-db-server.onrender.com/api/v2/customers"
-
         const [isBlacklisted, setIsBlacklisted] = useState<boolean | null>(null)
 
         const fetchBlacklistStatus = async () => {
@@ -488,8 +479,8 @@ export function submitReservation(
             }
 
             try {
-                const res = await fetch(
-                    `${CUSTOMER_API_BASE}/${encodeURIComponent(membershipNumber)}`
+                const res = await getCustomer(
+                    encodeURIComponent(membershipNumber)
                 )
 
                 if (!res.ok) {
