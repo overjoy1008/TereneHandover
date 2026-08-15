@@ -32,7 +32,7 @@ export type ApiOrigins = {
 }
 
 /** Switch environments here. Default must remain PROD. */
-export const ACTIVE_ENV: ApiEnv = "PROD"
+export const ACTIVE_ENV: ApiEnv = "DEV"
 
 const PROD_ORIGINS: ApiOrigins = {
     db: "https://terene-db-server.onrender.com",
