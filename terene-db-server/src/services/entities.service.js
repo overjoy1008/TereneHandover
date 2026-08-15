@@ -118,17 +118,38 @@ const COUPON_DELETE_ENTITY_TYPE = {
     coupon_instances: "instance",
 }
 
-export async function deleteById(type, idField, idValue) {
+function couponHistoryIds(entityType, idValue, row) {
+    if (entityType === "definition") {
+        return {
+            definitionsId: String(
+                row?.coupon_definition_id ?? idValue
+            ),
+            instancesId: null,
+        }
+    }
+
+    return {
+        definitionsId:
+            row?.coupon_definition_id != null
+                ? String(row.coupon_definition_id)
+                : null,
+        instancesId: String(row?.coupon_instance_id ?? idValue),
+    }
+}
+
+export async function deleteById(type, idField, idValue, queryable = db) {
     const table = TABLE_MAP[type]
     if (!table) throw new Error("Invalid entity type")
 
     const entityType = COUPON_DELETE_ENTITY_TYPE[type]
     if (!entityType) {
-        await db.query(`DELETE FROM ${table} WHERE ${idField} = $1`, [idValue])
+        await queryable.query(`DELETE FROM ${table} WHERE ${idField} = $1`, [
+            idValue,
+        ])
         return
     }
 
-    const client = await db.connect()
+    const client = await queryable.connect()
     try {
         await client.query("BEGIN")
 
@@ -138,11 +159,24 @@ export async function deleteById(type, idField, idValue) {
         )
         const row = selected.rows[0]
         if (row) {
+            const { definitionsId, instancesId } = couponHistoryIds(
+                entityType,
+                idValue,
+                row
+            )
             await client.query(
                 `INSERT INTO coupon_deletion_history_250618
-                    (entity_type, entity_id, deleted_by, source, snapshot)
-                 VALUES ($1, $2, $3, $4, $5::jsonb)`,
-                [entityType, String(idValue), null, null, JSON.stringify(row)]
+                    (entity_type, entity_id, definitions_id, instances_id, deleted_by, source, snapshot)
+                 VALUES ($1, $2, $3, $4, $5, $6, $7::jsonb)`,
+                [
+                    entityType,
+                    String(idValue),
+                    definitionsId,
+                    instancesId,
+                    null,
+                    null,
+                    JSON.stringify(row),
+                ]
             )
         }
 
